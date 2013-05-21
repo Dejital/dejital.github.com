@@ -1,4 +1,6 @@
-dejital.github.com
-==================
+My homepage
+===========
 
-Github pages.
+My homepage hosted on Github Pages and served by Jekyll.
+
+http://sergeyk.com
