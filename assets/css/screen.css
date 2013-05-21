@@ -60,7 +60,7 @@ footer {
     margin: 0px;
 }
 
-footer a, a:active, a:visited {
+footer a, footer a:active, footer a:visited {
     color: #D41;
     text-decoration: none;
     font-weight: bold;
