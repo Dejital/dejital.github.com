@@ -1,0 +1,10 @@
+---
+layout: default
+title: Music
+---
+
+<ul>
+{% for model in site.music %}
+    <li>{{ model.title }}</li>
+{% endfor %}
+</ul>
