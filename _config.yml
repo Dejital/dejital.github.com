@@ -1,4 +1,1 @@
-permalink: /archive/:year/:month/:title/
-
-jekyll_models: [music]
-jekyll_models_urls: rest-like
+permalink: "/blog/:title"

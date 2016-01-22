@@ -58,3 +58,8 @@ footer a, footer a:active, footer a:visited {
 footer a:hover {
     color: #444;
 }
+
+h1 {
+    line-height: initial;
+    margin: 20px 0 0 0;
+}
