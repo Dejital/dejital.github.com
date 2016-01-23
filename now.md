@@ -14,3 +14,5 @@ few things that I'm doing now:
 - Writing and recording new [music](https://soundcloud.com/dejital).
 - Listening to my favorite podcasts.
 - Trying to get into [blogging](/blog/).
+
+Last Updated: January 22, 2016
