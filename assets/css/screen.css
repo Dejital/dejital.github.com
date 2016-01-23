@@ -22,14 +22,14 @@ header {
 }
 
 #content a {
-    border-bottom: 1px dotted #0066cc;
+    border-bottom: 1px dotted #c0c0c0;
     color: #0066cc;
     text-decoration: none;
 }
 
 #content a:visited {
-    border-bottom-color: #9966cc;
-    color: #9966cc;
+    border-bottom-color: #c0c0c0;
+    color: #0066cc;
 }
 
 #content a:hover {
@@ -38,8 +38,18 @@ header {
 }
 
 #content a:visited:hover {
-    border-bottom-color: #bb88ee;
-    color: #bb88ee;
+    border-bottom-color: #2288ee;
+    color: #2288ee;
+}
+
+#content a:active {
+    border-bottom-color: #D41;
+    color: #D41;
+}
+
+#content a:visited:active {
+    border-bottom-color: #D41;
+    color: #D41;
 }
 
 footer {
@@ -59,7 +69,7 @@ footer a:hover {
     color: #444;
 }
 
-h1 {
+h1, h2, h3 {
     line-height: initial;
     margin: 20px 0 0 0;
 }
