@@ -1,75 +1,55 @@
-html {
-    margin: 20px;
-}
-
 body {
-    width: 450px;
-    margin: 0 auto;
-    padding: 15px 40px;
-    overflow-y: scroll;
+    color: #444;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 20px;
     line-height: 1.75;
-    color: #444;
 }
 
-section, header, footer {
-    display: block;
+.content {
+    margin: 0 auto;
+    max-width: 450px;
+    padding: 2em;
 }
 
 header {
     text-align: right; 
 }
 
-.home a {
+main a, main a:visited {
     border-bottom: 1px dotted #c0c0c0;
     color: #0066cc;
     text-decoration: none;
 }
 
-.home a:visited {
-    border-bottom-color: #c0c0c0;
-    color: #0066cc;
-}
-
-#content a:hover {
+main a:hover, main a:visited:hover {
     border-bottom-color: #2288ee;
     color: #2288ee;
 }
 
-#content a:visited:hover {
-    border-bottom-color: #2288ee;
-    color: #2288ee;
+main a:active, main a:visited:active {
+    border-bottom-color: #004d9a;
+    color: #004d9a;
 }
 
-#content a:active {
-    border-bottom-color: #D41;
-    color: #D41;
-}
-
-#content a:visited:active {
-    border-bottom-color: #D41;
-    color: #D41;
-}
-
-.blog p {
+article p {
     font-family: Georgia, "Times New Roman", serif;
     line-height: 1.5;
 }
 
-.blog a {
+article a, article a:visited {
     border-bottom: 1px dotted #c0c0c0;
     color: #444;
     text-decoration: none;
 }
 
-.blog a:visited {
-    color: #444;
+article a:hover, article a:visited:hover {
+    border-bottom-color: #2288ee;
+    color: #2288ee;
 }
 
-footer {
-    padding: 0px;
-    margin: 0px;
+article a:active, article a:visited:active {
+    border-bottom-color: #004d9a;
+    color: #004d9a;
 }
 
 footer a, footer a:active, footer a:visited {
@@ -86,5 +66,8 @@ footer a:hover {
 
 h1, h2, h3 {
     line-height: initial;
-    margin: 20px 0 0 0;
+}
+
+ul {
+    list-style-type: square;
 }

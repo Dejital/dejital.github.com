@@ -4,19 +4,19 @@
         <title>Serge Nevsky{% if page.title }%} - {{page.title}}{% endif %}</title>
         <meta charset="utf-8">
         <link rel="shortcut icon" href="/favicon.ico">
-        <link rel="stylesheet" href="/assets/css/normalize.css">
+        <link rel="stylesheet" href="/assets/css/pure-min.css">
         <link rel="stylesheet" href="/assets/css/screen.css">
     </head>
     <body>
-        <header>
-            <a href="/"><img alt="Serge Nevsky" height="80" src="/assets/img/logo.png" width="80"></a>
-        </header>
-        <section id="content" class="home">
+        <div class="content">
+            <header>
+                <a href="/"><img alt="Serge Nevsky" height="80" src="/assets/img/logo.png" width="80"></a>
+            </header>
             {{content}}
-        </section>
-        <footer>
-            <p><a href="#">&#8718;</a></p>
-        </footer>
+            <footer>
+                <p><a href="#">&#8718;</a></p>
+            </footer>
+        </div>
         <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
