@@ -3,6 +3,11 @@ layout: default
 ---
 
 <article>
+
+  {% if page.image }%}
+  <img src="{{ page.image }}" alt="{{ page.title }}" class="pure-img">
+  {% endif %}
+
   <h2>{{ page.title }}</h2>
   {{ content }}
 </article>
