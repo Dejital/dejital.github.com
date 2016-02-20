@@ -1,9 +1,8 @@
 ---
-layout: default
+layout: blog
 ---
 
 <article>
-
   {% if page.image }%}
   <img src="{{ page.image }}" alt="{{ page.title }}" class="pure-img">
   {% endif %}
@@ -11,3 +10,19 @@ layout: default
   <h2>{{ page.title }}</h2>
   {{ content }}
 </article>
+
+<nav>
+  <div class="pure-g">
+    <div class="previous pure-u-1-2">
+      {% if page.previous.url %}
+        <a class="pure-button" href="{{page.previous.url}}">&#8592; Previous</a>
+      {% endif %}
+    </div>
+
+    <div class="next pure-u-1-2">
+      {% if page.next.url %}
+        <a class="pure-button" href="{{page.next.url}}">Next &#8594;</a>
+      {% endif %}
+    </div>
+  </div>
+</nav>

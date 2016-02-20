@@ -11,8 +11,31 @@ body {
     padding: 2em;
 }
 
-header {
+.main-header {
     text-align: right; 
+}
+
+.breadcrumb-header {
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+.breadcrumb-header a {
+    color: #444;
+    text-decoration: none;
+}
+
+.breadcrumb-header a:hover {
+    color: #D41;
+}
+
+nav {
+    font-size: small;
+    margin: 0.5em 0;
+}
+
+.next {
+    text-align: right;
 }
 
 main a, main a:visited {
