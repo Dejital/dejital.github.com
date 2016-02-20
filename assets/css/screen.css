@@ -75,6 +75,11 @@ article a:active, article a:visited:active {
     color: #004d9a;
 }
 
+#meta { 
+    color: #999;
+    font-size: small;
+}
+
 footer a, footer a:active, footer a:visited {
     color: #D41;
     text-decoration: none;

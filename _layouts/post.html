@@ -9,6 +9,10 @@ layout: blog
 
   <h2>{{ page.title }}</h2>
   {{ content }}
+
+  <p id="meta">
+    Published on {{ page.date | date: '%B %d, %Y' }} by <a href="/blog">Serge Nevsky</a>.
+  </p>
 </article>
 
 <nav>
