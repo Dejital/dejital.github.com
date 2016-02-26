@@ -13,6 +13,7 @@ few things that I'm doing now:
 - Programming side projects, some [public](https://github.com/Dejital) and some private.
 - Writing and recording new [music](https://soundcloud.com/dejital).
 - Listening to my favorite podcasts.
-- Trying to get into [blogging](/blog/).
+- Getting into [blogging](/blog/).
+- Taking pictures on my new Olympus OM-D EM5 II camera.
 
-Last Updated: January 22, 2016
+Last Updated: February 25, 2016
