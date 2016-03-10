@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The perfect notebook system to get things done
+title: The perfect notebook system for getting things done
 ---
 
 I accidentally invented the single best system to keep a pocket notebook.
