@@ -10,10 +10,10 @@ I am living and working full time in Kansas City. The following are a
 few things that I'm doing now:
 
 - Working full time as a back-end C# developer.
-- Programming side projects, some [public](https://github.com/Dejital) and some private.
+- Building a [side project](http://personowl.azurewebsites.net).
 - Writing and recording new [music](https://soundcloud.com/dejital).
 - Listening to my favorite podcasts.
-- Getting into [blogging](/blog/).
+- Trying to write [blog posts](/blog/).
 - Taking pictures on my new Olympus OM-D EM5 II camera.
 
-Last Updated: February 25, 2016
+Last Updated: April 25, 2016
