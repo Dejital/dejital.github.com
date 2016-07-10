@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>New Zealand Puzzle</title>
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <link rel="stylesheet" href="/assets/css/pure-min.css">
+        <link rel="stylesheet" href="/assets/css/puzzle.css">
+    </head>
+    <body onload="puzzle()">
+        <div class="container">
+            <h1>New Zealand Puzzle</h1>
+
+            <input class="pure-button reset-button" type="button" value="Reset" onClick="puzzle()">
+            <input class="pure-button undo-button" type="button" value="Undo">
+
+            <div class="game-board">Loading..</div>
+            <div class="game-pieces">Loading..</div>
+
+            <h3 class="instructions"></h3>
+
+            <footer>
+                <a href="http://snevsky.com">App by Serge Nevsky</a>
+            </footer>
+        </div>
+
+        <script src="/assets/js/puzzle.js"></script>
+    </body>
+</html>
