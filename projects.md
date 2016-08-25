@@ -20,7 +20,7 @@ Puzzle game written in vanilla JavaScript based on the puzzle used in
 my college research project.
 [(source)](https://github.com/Dejital/Personowl)
 
-### [snevsky.com](/)
+### [snevsky.com](/) (2015)
 
 My personal website, served by Jekyll. It contains a blog and several 
 static web pages.
