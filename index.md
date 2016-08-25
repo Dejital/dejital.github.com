@@ -15,4 +15,4 @@ I like to work on [coding projects](https://github.com/dejital) (like [this puzz
 
 I enjoy [playing](https://www.facebook.com/photo.php?v=2726733446186&l=84438092421051772) and [listening](http://www.last.fm/user/Dejital) to music. I am part of a rock band called [The Former](http://theformermusic.com) and I [produce my own songs](http://soundcloud.com/dejital) too. I am known to [doodle](http://sergeyk.tumblr.com) as well.
 
-Feel free to [connect](https://www.facebook.com/serge.nevsky) with me or send an [e-mail](mailto:sergey@sergeyk.com).
+Feel free to [connect](https://www.facebook.com/serge.nevsky) with me or send an [e-mail](mailto:serge@snevsky.com).
