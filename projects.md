@@ -6,7 +6,7 @@ permalink: '/projects/'
 
 ## Projects
 
-This is a chronological history of several personal/side projects. 
+This is a chronological history of several coding side projects. 
 
 ### [Personowl](http://app.snevsky.com/) (2016)
 
@@ -20,9 +20,15 @@ Puzzle game written in vanilla JavaScript based on the puzzle used in
 my college research project.
 [(source)](https://github.com/Dejital/Personowl)
 
+### [snevsky.com](/)
+
+My personal website, served by Jekyll. It contains a blog and several 
+static web pages.
+[(source)](https://github.com/Dejital/dejital.github.com)
+
 ### [Films Watched](https://snevsky-films.herokuapp.com/) (2015)
 
-A list of every movie I've seen since 2009 in a simple Angular app.
+A list of every movie I've seen since 2009 in a simple AngularJS app.
 [(source)](https://github.com/Dejital/films)
 
 ### [Lubinian Tales](http://lubiniantales.com/) (2015)
@@ -39,8 +45,8 @@ Served by Jekyll.
 
 ### [Exploring the New Zealand Puzzle](https://github.com/Dejital/new-zealand-puzzle) (2012)
 
-A research project at Rockhurst University prepared with professor 
-Dr. Keith Brandt. It is a program designed to solve a very dififcult, 
+A research project at Rockhurst University done alongside professor 
+Dr. Keith Brandt. It is a program designed to solve a very difficult, 
 pre-existing puzzle recursively, as well as generate new puzzle boards.
 The project won the **Rockhurst Outstanding Research Award** in 2012.
 [(source)](https://github.com/Dejital/new-zealand-puzzle)
