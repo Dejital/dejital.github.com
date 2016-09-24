@@ -31,11 +31,17 @@ The biggest mistakes happen during the initial "phone screen."
 This phase typically consists of rapid fire questions pulled from 
 the first result found on Google. _"Top 100 C# interview questions."_
 
-Did you realize that the applicant read that same article last night in preparation?
+Did you realize that the applicant read that same article last night 
+in preparation?
 
-And consider the nature of the questions. An applicant's ability to 
+Prefer home-grown questions. Prompt your developers to come up with 
+a small handful of technical questions that apply directly to the work 
+the new developer will be doing. 
+
+The nature of the questions of often problematic. An applicant's ability to 
 define an abstract class does not indicate their ability to 
-actually implement it.
+actually implement it. Favor questions that display critical thinking 
+rather than recall ability.
 
 Consider a conversational approach. Ask which technologies 
 interest the applicant and why. This answer _will_ be genuine. You can 
