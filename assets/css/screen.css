@@ -29,6 +29,10 @@ body {
     color: #2288ee;
 }
 
+.breadcrumb-header a:active {
+    color: #004d9a;
+}
+
 nav {
     font-size: small;
 }
