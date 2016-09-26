@@ -38,7 +38,7 @@ Prefer home-grown questions. Prompt your developers to come up with
 a small handful of technical questions that apply directly to the work 
 the new developer will be doing. 
 
-The nature of the questions of often problematic. An applicant's ability to 
+The nature of the questions is often problematic. An applicant's ability to 
 define an abstract class does not indicate their ability to 
 actually implement it. Favor questions that display critical thinking 
 rather than recall ability.
