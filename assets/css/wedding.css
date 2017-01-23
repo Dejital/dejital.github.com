@@ -180,6 +180,7 @@ a.pure-button-primary {
 .content {
     max-width: 980px;
     margin: 0 auto;
+    padding: 1em 1em 3em;
 }
 
 .content-wrapper {
