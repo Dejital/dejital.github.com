@@ -117,11 +117,13 @@ a.pure-button-primary {
     color: white;
 }
 
-.home-menu a {
+.home-menu a, .footer a {
     color: #cdd0e8;
 }
 .home-menu li a:hover,
-.home-menu li a:focus {
+.home-menu li a:focus,
+.footer li a:hover,
+.footer li a:focus {
     background: none;
     border: none;
     color: white;
@@ -134,15 +136,24 @@ a.pure-button-primary {
  */
 
 .splash-container {
-    background: #1f8dd6;
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
     width: 100%;
-    height: 88%;
+    height: 100%;
     top: 0;
     left: 0;
     position: fixed !important;
+
+    background-color: #1f8dd6;
+    background-image: url(/assets/img/sunflowers.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .splash {
