@@ -151,7 +151,7 @@ a.pure-button-primary {
     background-image: url(/assets/img/elegant-couple.jpg);
     background-repeat: no-repeat;
     background-position: center top;
-    background-attachment: fixed;
+    background-attachment: scroll;
     webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
