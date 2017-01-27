@@ -135,19 +135,22 @@ a.pure-button-primary {
  */
 
 .splash-container {
+    /*
+    Not required?
     z-index: 1;
+    top: 0;
+    left: 0;
+    */
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
     width: 100%;
     height: 88%;
-    top: 0;
-    left: 0;
-    position: fixed !important;
+    position: fixed;
 
     background-color: #A72C7B;
-    background-image: url(/assets/img/sunflowers.jpg);
+    background-image: url(/assets/img/elegant-couple.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
     background-attachment: fixed;
     webkit-background-size: cover;
     -moz-background-size: cover;
