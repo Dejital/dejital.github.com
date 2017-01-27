@@ -117,13 +117,16 @@ a.pure-button-primary {
     color: white;
 }
 
-.home-menu a, .footer a {
+.home-menu a, .footer a, .ribbon a {
     color: #DCCDE8;
 }
 .home-menu li a:hover,
 .home-menu li a:focus,
-.footer li a:hover,
-.footer li a:focus {
+.ribbon a:hover,
+.ribbon a:focus,
+.footer a:hover,
+.footer a:focus
+{
     background: none;
     border: none;
     color: white;
@@ -171,7 +174,6 @@ a.pure-button-primary {
 /* This is the main heading that appears on the blue section */
 .splash-head {
     font-size: 32px;
-    font-weight: bold;
     font-family: Georgia, "Times New Roman", serif;
     color: white;
     font-weight: 500;
