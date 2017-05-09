@@ -118,3 +118,11 @@ ul {
 aside > img {
     margin: 1em auto;
 }
+
+header img:hover {
+    transform: rotate(3deg);
+}
+
+header img:hover {
+    transform: scale(1.1) rotate(3deg);
+}
