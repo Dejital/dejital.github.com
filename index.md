@@ -9,7 +9,7 @@ title: Hello World!
 
 Hello, my name is Serge Nevsky <a href="#" onclick="document.getElementById('pronounce').play()">&#9835;</a>.
 
-I am a software engineer from Kansas City. I focus on writing clean, concise and mindful code. Please see my [résumé](https://dl.dropboxusercontent.com/u/22779686/Serge%20Nevsky%20Resume.pdf) and connect with me on [LinkedIn](http://linkedin.snevsky.com).
+I am a software engineer from Kansas City. I focus on writing clean, concise and mindful code. Please see my [résumé](https://raw.githubusercontent.com/Dejital/resume/bb73e76b2737d611a5fdbf747c280712db28eff5/SergeNevskyResume.pdf) and connect with me on [LinkedIn](http://linkedin.snevsky.com).
 
 I enjoy working on [coding projects](/projects/) and [blogging](/blog/). See what I'm doing right [now](/now/).
 
