@@ -244,11 +244,21 @@ header a, header a:visited, header a:hover, header a:active {
 
 @media (max-width: 600px) {
     .card-layout { 
+        max-width: 400px;
         column-count: inherit;
     }
-
     .card {
-        width: auto;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .card p {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    header {
+        font-size: large;
     }
 }
 
