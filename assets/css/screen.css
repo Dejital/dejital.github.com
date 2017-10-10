@@ -155,7 +155,6 @@ header img:active {
     column-count: 2;
     column-gap: 0;
     margin: 0 auto;
-    max-width: 600px;
 }
 
 .card-layout a {
@@ -169,7 +168,7 @@ header img:active {
     padding: 0;
     border-radius: 0.2em;
     box-shadow: 0 1px 1px rgba(23,43,77,0.6), 0 0 0.5px 0 rgba(23,43,77,0.65);
-    width: 278px;
+    width: 400px;
     line-height: 1.5;
     margin: 0.5em;
     display: inline-block;
@@ -221,6 +220,7 @@ header img:active {
     color: white;
     text-align: center;
     padding: 2em 0;
+    margin-top: 2em;
 }
 
 .heading strong { 
@@ -252,7 +252,30 @@ header a, header a:visited, header a:hover, header a:active {
     color: white;
 }
 
-@media (max-width: 600px) {
+#blog-header {
+    display: none;
+}
+
+header {
+    display: flex;
+}
+
+.nav-item {
+    flex: 1;
+}
+
+.nav-item.side {
+    text-align: left;
+    text-transform: none;
+}
+
+@media (max-width: 1200px) {
+    .card {
+        width: 278px;
+    }
+}
+
+@media (max-width: 700px) {
     .card-layout { 
         max-width: 400px;
         column-count: inherit;
@@ -263,15 +286,10 @@ header a, header a:visited, header a:hover, header a:active {
         margin-right: 0;
         width: 100%;
     }
-    .card p {
-        margin-left: 1em;
-        margin-right: 1em;
-    }
     header {
         font-size: large;
     }
-}
-
-#blog-header {
-    display: none;
+    .nav-item.side {
+        display: none;
+    }
 }

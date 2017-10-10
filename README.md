@@ -12,9 +12,6 @@ There are a few things I would like to add:
 ### Enhancements
 
 - Update Favicon and any other Logo assets.
-- Display images inside of cards, subsequently add for Photographs 
-  and Doodles card.
-- More natural navigation back to home page and the blog.
 - Add some animation for the front page on first load.
 - Change "emblems" on cards to be more colorful and/or incorporate
   icons.
