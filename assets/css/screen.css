@@ -166,14 +166,15 @@ header img:active {
 .card {
     background: #fff;
     color: #444;
-    padding: 0.1em 1em;
+    padding: 0;
     border-radius: 0.2em;
     box-shadow: 0 1px 1px rgba(23,43,77,0.6), 0 0 0.5px 0 rgba(23,43,77,0.65);
-    width: 237px;
+    width: 278px;
     line-height: 1.5;
     margin: 0.5em;
     display: inline-block;
     vertical-align: top;
+    line-height: 0;
 
     transform: translateZ(0);
 
@@ -183,6 +184,15 @@ header img:active {
     -moz-transition-duration: 0.1s;
     -o-transition-duration: 0.1s;
     transition-duration: 0.1s;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card p {
+    margin: 1em;
+    line-height: 1.5;
 }
 
 .card:hover {
