@@ -2,13 +2,12 @@ body {
     color: #444;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 20px;
-    line-height: 1.75;
+    line-height: 1.5;
+    background: #fff;
 }
 
 .content {
     margin: 0 auto;
-    max-width: 450px;
-    padding: 2em;
 }
 
 .main-header {
@@ -39,6 +38,20 @@ nav {
 
 .next {
     text-align: right;
+}
+
+main, footer {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 0.5em 2em;
+}
+
+article {
+    padding-top: 0.5em;
+}
+
+footer {
+    margin-bottom: 2em;
 }
 
 main a, main a:visited {
@@ -84,7 +97,7 @@ article a:active, article a:visited:active {
 }
 
 footer a, footer a:active, footer a:visited {
-    color: #D41;
+    color: #3f51b5;
     text-decoration: none;
     font-weight: bold;
     border: none;
@@ -101,6 +114,7 @@ h1, h2, h3 {
 
 ul {
     list-style-type: square;
+    padding-left: 1em;
 }
 
 .project {
@@ -135,4 +149,109 @@ header img:hover {
 
 header img:active {
     transform: scale(1.1) rotate(2deg);
+}
+
+.card-layout { 
+    column-count: 2;
+    column-gap: 0;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.card-layout a {
+    border: none;
+    text-decoration: none;
+}
+
+.card {
+    background: #fff;
+    color: #444;
+    padding: 0.1em 1em;
+    border-radius: 0.2em;
+    box-shadow: 0 1px 1px rgba(23,43,77,0.6), 0 0 0.5px 0 rgba(23,43,77,0.65);
+    width: 237px;
+    line-height: 1.5;
+    margin: 0.5em;
+    display: inline-block;
+    vertical-align: top;
+
+    transform: translateZ(0);
+
+    break-inside: avoid;
+    
+    -webkit-transition-duration: 0.1s;
+    -moz-transition-duration: 0.1s;
+    -o-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+}
+
+.card:hover {
+    transform: translate(0px, -2px);
+    box-shadow: 0 3px 1px rgba(23,43,77,0.6), 0 0 0.5px 0 rgba(23,43,77,0.65);
+    
+    -webkit-transition-duration: 0.1s;
+    -moz-transition-duration: 0.1s;
+    -o-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+}
+
+.card:active {
+    transform: scale(1.05) rotate(-1deg);
+}
+
+.card span {
+    padding: 0.5em 0.7em;
+    background: cadetblue;
+    margin-right: 0.4em;
+    color: white;
+    font-size: small;
+}
+
+.heading {
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.heading strong { 
+    font-size: larger;
+}
+
+main .heading a {
+    color: #c0c0c0;
+    border-bottom: 2px solid #c0c0c0;
+}
+
+header {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: small;
+    margin-bottom: 1em;
+    text-align: center;
+    background: #3f51b5;
+    padding: 1em;
+    
+    -webkit-transition-duration: 0.1s;
+    -moz-transition-duration: 0.1s;
+    -o-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+}
+
+header a, header a:visited, header a:hover, header a:active {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .card-layout { 
+        column-count: inherit;
+    }
+
+    .card {
+        width: auto;
+    }
+}
+
+#blog-header {
+    display: none;
 }
