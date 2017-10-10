@@ -151,10 +151,33 @@ header img:active {
     transform: scale(1.1) rotate(2deg);
 }
 
+@keyframes bottomFadeIn {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    transform: translateY(1em);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 .card-layout { 
     column-count: 2;
     column-gap: 0;
     margin: 0 auto;
+
+    animation-name: bottomFadeIn;
+    animation-delay: 0s;
+    animation-duration: 2s;
 }
 
 .card-layout a {
@@ -221,6 +244,10 @@ header img:active {
     text-align: center;
     padding: 2em 0;
     margin-top: 2em;
+
+    animation-name: fadeIn;
+    animation-delay: 0;
+    animation-duration: 1s;
 }
 
 .heading strong { 
