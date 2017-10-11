@@ -4,23 +4,32 @@
         <title>{% if page.title }%}{{page.title}} | {% endif %}Serge Nevsky</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=0.7">
+        <meta name="theme-color" content="#669999">
         {% feed_meta %}
-        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#669999">
         <link rel="stylesheet" href="/assets/css/pure-min.css">
         <link rel="stylesheet" href="/assets/css/screen.css">
     </head>
     <body>
         <div id="top">
             <header>
-              <div class="nav-item side" style="text-align: left;">
-                <a href="/">←  Home</a>
-              </div>
-              <div class="nav-item">
+              <a href="/" class="nav-item side" style="text-align: left;">
+                ←  Home
+              </a>
+              <a href="/" id="site-header" class="nav-item">
                 <span>
-                  <a href="/">Serge Nevsky</a>
-                  <a id="blog-header" href="/blog/">/ Blog</a>
+                  Serge Nevsky
                 </span>
-              </div>
+              </a>
+              <a href="/blog/" id="blog-header" class="nav-item">
+                <span>
+                  Serge Nevsky / Blog
+                </span>
+              </a>
               <div class="nav-item side">
               </div>
             </header>
@@ -29,6 +38,8 @@
                 <a href="#top">&uarr;</a>
             </footer>
         </div>
+
+        {% if jekyll.environment == 'production' %}
         <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -38,5 +49,7 @@
   ga('create', 'UA-6623716-1', 'auto');
   ga('send', 'pageview');
         </script>
+        {% endif %}
+
     </body>
 </html>

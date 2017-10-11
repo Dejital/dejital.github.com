@@ -11,8 +11,6 @@ There are a few things I would like to add:
 
 ### Enhancements
 
-- Update Favicon and any other Logo assets.
-- Add some animation for the front page on first load.
 - Change "emblems" on cards to be more colorful and/or incorporate
   icons.
 - Add screenshots to Projects page.

@@ -133,24 +133,6 @@ aside > img {
     margin: 1em auto;
 }
 
-header img:hover {
-    transform: rotate(3deg);
-    
-    -webkit-transition-duration: 0.1s;
-    -moz-transition-duration: 0.1s;
-    -o-transition-duration: 0.1s;
-    transition-duration: 0.1s;
-
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-     transition-property: transform;
-}
-
-header img:active {
-    transform: scale(1.1) rotate(2deg);
-}
-
 @keyframes bottomFadeIn {
   0% {
     opacity: 0;
@@ -228,7 +210,7 @@ header img:active {
 }
 
 .card:active {
-    transform: scale(1.05) rotate(-1deg);
+    transform: scale(1.05) rotate(-0.2deg);
 }
 
 .card span {
@@ -264,9 +246,8 @@ header {
     font-weight: bold;
     font-size: small;
     margin-bottom: 1em;
-    text-align: center;
     background: #3f51b5;
-    padding: 1em;
+    padding: 0;
     
     -webkit-transition-duration: 0.1s;
     -moz-transition-duration: 0.1s;
@@ -289,6 +270,13 @@ header {
 
 .nav-item {
     flex: 1;
+    padding: 1em;
+    text-align: center;
+}
+
+a.nav-item:hover { 
+    transition: background-color 0.5s ease-in;
+    background: #37469c;
 }
 
 .nav-item.side {
