@@ -208,10 +208,6 @@ aside > img {
     transition-duration: 0.1s;
 }
 
-.card:active {
-    transform: scale(1.05) rotate(-0.2deg);
-}
-
 .card span {
     padding: 0.5em 0.7em;
     background: cadetblue;
