@@ -239,7 +239,7 @@ main .heading a {
 header {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: small;
+    font-size: medium;
     margin-bottom: 1em;
     background: #3f51b5;
     padding: 0;
