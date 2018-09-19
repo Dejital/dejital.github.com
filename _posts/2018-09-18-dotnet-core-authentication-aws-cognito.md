@@ -34,6 +34,8 @@ I like it particularly for its pricing: Free for the first 50,000 monthly active
 
 This article will show you how to set up Amazon Cognito in AWS, then configure Authentication for a Web API project to use Bearer tokens.
 
+If you'd like to skip setting up Amazon Cognito in AWS, you can [skip straight to the C# portion](#add-authentication-to-web-api) for code samples.
+
 ### Table of Contents
 
 [1. Create a User Pool](#create-a-user-pool) <br />
