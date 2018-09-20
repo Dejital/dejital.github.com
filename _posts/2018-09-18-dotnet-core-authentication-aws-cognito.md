@@ -299,7 +299,7 @@ public class AuthenticationController : ControllerBase
 
         var response = await cognito.AdminInitiateAuthAsync(request);
 
-        return Ok(response.AuthenticationResult.AccessToken);
+        return Ok(response.AuthenticationResult.IdToken);
     }
 }
 ```
