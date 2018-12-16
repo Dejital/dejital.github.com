@@ -318,3 +318,13 @@ a.nav-item:hover {
 #mc-embedded-subscribe:hover {
   background-color: #444 !important;
 }
+
+@media (max-width: 768px) {
+  #mce-EMAIL {
+      width: 350px !important;
+  }
+  #mc_embed_signup_scroll > div.clear {
+      display: inline-block !important;
+      width: unset !important;
+  }
+}
