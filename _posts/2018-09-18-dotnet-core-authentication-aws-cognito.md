@@ -25,6 +25,9 @@ title: Authentication in ASP.NET Core Web API with Amazon Cognito
   article img {
     width: 100%;
   }
+  article {
+    padding-left: 1em; padding-right: 1em;
+  }
 </style>
 
 

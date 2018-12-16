@@ -227,6 +227,14 @@ aside > img {
     animation-duration: 1s;
 }
 
+.heading #mc_embed_signup {
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadeIn;
+    animation-delay: 1.5s;
+    animation-duration: 1s;
+}
+
 .heading strong { 
     font-size: larger;
 }
@@ -302,4 +310,11 @@ a.nav-item:hover {
     .nav-item.side {
         display: none;
     }
+}
+
+#mc-embedded-subscribe {
+  background-color: #569ea0 !important;
+}
+#mc-embedded-subscribe:hover {
+  background-color: #444 !important;
 }
