@@ -87,19 +87,19 @@ An "App client id" will be generated for your app client. Take note of this ID a
 
 ASP.NET Core Web API applications configure Authentication in the Startup
 class. Navigate to the `Startup.cs` file in your solution Now find the
-`ConfigureServices` function. Below the call to `AddMvc` include the `AddAuthentication` and `AddJwtBearer` extension methods: 
+`ConfigureServices` function. Above the call to `AddMvc` include the `AddAuthentication` and `AddJwtBearer` extension methods: 
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
-    services.AddMvc();
-
     services.AddAuthentication("Bearer")
         .AddJwtBearer(options =>
         {
             options.Audience = "Your App Client ID goes here!";
             options.Authority = "Your Authority URL goes here!";
         });
+
+    services.AddMvc();
 }
 ```
 
