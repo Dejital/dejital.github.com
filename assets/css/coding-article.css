@@ -1,0 +1,24 @@
+footer,
+main,
+nav,
+article h2,
+article h3,
+article p,
+article pre, article ul, article ol,
+article .article-header-img { 
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+article pre {
+  font-size: smaller;
+}
+article ul {
+  padding-left: 0;
+}
+article img {
+  width: 100%;
+}
+.content {
+  padding-left: 1em; padding-right: 1em;
+}
