@@ -4,16 +4,31 @@ title: Blog
 permalink: '/blog/'
 ---
 
-<main>
-  <h2>Blog</h2>
+<style type="text/css">
+  .post-on-index p, .post-on-index h3 {
+      margin: 0.5em 0;
+  }
+  main ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .post-on-index {
+    margin: 1.5em 0;
+  }
+  hr {
+    border-top: 1px dotted lightgray;
+  }
+</style>
 
+<main>
   <ul>
   {% for post in site.posts %}
-  <li>
-    <p>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </p>
+  <li class="post-on-index">
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p style="margin: 0px;">{{ post.excerpt }}</p>
+    <span style="font-size: smaller;"><a href="{{ post.url }}">Read More →</a></span>
   </li>
+      <hr>
   {% endfor %}
   </ul>
 

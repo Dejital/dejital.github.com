@@ -3,34 +3,6 @@ layout: post
 title: Authentication in ASP.NET Core Web API with Amazon Cognito
 ---
 
-<style type="text/css">
-  footer,
-  main,
-  nav,
-  article h2,
-  article h3,
-  article p,
-  article pre, article ul, article ol,
-  article .article-header-img { 
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  article pre {
-    font-size: smaller;
-  }
-  article ul {
-    padding-left: 0;
-  }
-  article img {
-    width: 100%;
-  }
-  .content {
-    padding-left: 1em; padding-right: 1em;
-  }
-</style>
-
-
 [Amazon Cognito](https://aws.amazon.com/cognito/) is the user management and authentication product in AWS. It allows for unified sign-up and sign-in flows across web and mobile apps. 
 
 I like it particularly for its pricing: Free for the first 50,000 monthly active users. The next 50,000 will cost you half a penny. Think you can sell your Director on that?
@@ -338,3 +310,5 @@ Now send the request to `GET /api/values`.
 The response "Hello" should be returned with a status of `200 OK` as expected.
 
 This validates an entire successful flow of Authentication in ASP.NET Core Web API with Amazon Cognito!
+
+{% include jumbo-blog.html %}
