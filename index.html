@@ -73,7 +73,9 @@ layout: main
     <div class="card">
       <p><span>B</span> <strong>Blog</strong></p>
       <p>Read some of the articles I've written.</p>
-      <p><strong>Latest:</strong> Authentication in ASP.NET Core Web API with Amazon Cognito</p>
+      {% for post in site.posts limit:1 %}
+      <p><strong>Latest:</strong> {{ post.title }}</p>
+      {% endfor %}
     </div>
   </a>
 
