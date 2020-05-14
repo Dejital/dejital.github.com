@@ -263,7 +263,7 @@ header a, header a:visited, header a:hover, header a:active {
     color: white;
 }
 
-#blog-header {
+#blog-header, #comments-header {
     display: none;
 }
 
