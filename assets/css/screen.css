@@ -308,7 +308,7 @@ a.nav-item:hover {
         font-size: large;
     }
     .nav-item.side {
-        display: none;
+        display: none !important;
     }
 }
 
