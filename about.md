@@ -30,7 +30,7 @@ practices.
 
 In my free time I like to work on side projects, play stringed
 instruments, snap photographs and spend time with my
-wife, friends and family.
+wife, daughter, family and friends.
 
 See my [résumé](http://snevsky.com/assets/file/SergeNevskyResume.pdf). 
 Also, see what I'm up to [now](/now/).
