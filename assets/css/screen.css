@@ -70,11 +70,6 @@ main a:active, main a:visited:active {
     color: #004d9a;
 }
 
-article p {
-    font-family: Georgia, "Times New Roman", serif;
-    line-height: 1.5;
-}
-
 article a, article a:visited {
     border-bottom: 1px dotted #c0c0c0;
     color: #444;
