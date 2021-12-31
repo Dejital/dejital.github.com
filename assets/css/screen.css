@@ -322,3 +322,7 @@ a.nav-item:hover {
       width: unset !important;
   }
 }
+hr {
+    border: 0;
+    border-top: 1px dotted lightgray;
+}
