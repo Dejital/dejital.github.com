@@ -8,6 +8,9 @@ permalink: '/about/'
 
 ## About
 
+I am a software engineer from Kansas City. 
+I'm [currently working at Meta](http://linkedin.snevsky.com) 
+
 I was born in Russia and moved to Kansas City as a child. I began
 making websites at age seven for myself, ranging from artwork to 
 webcomics to games, and hosting them on Geocities. I took an interest in
@@ -18,8 +21,10 @@ In that time I gained a love for `unix` and spent the
 majority of my time in the terminal, writing essays in `LaTeX`, emails
 in `mutt` and maintaining schoolwork with `git`.
 
-In my career I worked at local startups and small companies. I enjoy 
-working at a fast pace, on a small team, and in full stack development. 
+In my career I worked in both small startups and large companies.
+At Meta I work on Instagram and Facebook apps.
+
+I enjoy working at a fast pace, on a small team, and in full stack development. 
 I am passionate about building high quality products with great user
 experiences.
 
@@ -32,7 +37,7 @@ In my free time I like to work on side projects, play stringed
 instruments, snap photographs and spend time with my
 wife, daughter, family and friends.
 
-See my [résumé](http://snevsky.com/assets/file/SergeNevskyResume.pdf). 
+See my [résumé](https://snevsky.com/resume/SergeNevskyResume.pdf).
 Also, see what I'm up to [now](/now/).
 
 ### Social Networks
