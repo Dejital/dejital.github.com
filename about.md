@@ -21,8 +21,8 @@ In that time I gained a love for `unix` and spent the
 majority of my time in the terminal, writing essays in `LaTeX`, emails
 in `mutt` and maintaining schoolwork with `git`.
 
-In my career I worked in both small startups and large companies.
-At Meta I work on Instagram and Facebook apps.
+In my career I worked in both small startups and large companies in Kansas City.
+Now I work remotely for Meta on the Instagram and Facebook apps.
 
 I enjoy working at a fast pace, on a small team, and in full stack development. 
 I am passionate about building high quality products with great user
