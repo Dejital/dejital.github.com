@@ -2,26 +2,24 @@
 layout: main
 ---
 <audio id="pronounce">
-  <source src="assets/name.mp3">
-  <source src="assets/name.ogg">
+  <source src="assets/name.mp3">
+  <source src="assets/name.ogg">
 </audio>
 
 <style type="text/css">
   body {
-    background: #3f51b5;
+    background: var(--hero-bg, #3f51b5);
     color: white;
   }
   header {
     display: none;
   }
   main, footer {
-    max-width: 850px;
-    padding: 0;
+    max-width: 960px;
+    padding: 0 1rem;
   }
-  @media (max-width: 1200px) {
-    main {
-      max-width: 600px;
-    }
+  footer a, footer a:active, footer a:visited {
+    color: white;
   }
 </style>
 
@@ -29,18 +27,40 @@ layout: main
   <strong>
     Hello, my name is Serge Nevsky <a href="#" onclick="document.getElementById('pronounce').play()">&#9835;</a>
   </strong>
-  {% comment %}
-    Stealth until Meta outside-work clearance: no consulting CTA, no internal
-    stats or company-ranking claims. Revisit the credential line after clearance.
-  {% endcomment %}
-  <p>
-    I build and run fleets of AI agents that do real engineering work.
-    <br />
-    Software engineer at <i>Meta</i>. My agent orchestration system multiplies
-    what I ship &mdash; I write about how.
+  <p class="hero-lede">
+    I run fleets of AI agents that ship production software.
   </p>
+  <p class="hero-sub">
+    Software engineer at <i>Meta</i>. I built the orchestration system that
+    made me one of the most prolific engineers in the company &mdash; and I
+    write about how it works.
+  </p>
+
+  {% comment %}
+    DEPLOY GATE: internal Meta stat — confirm COI clearance and exact figures
+    before merge. Both numbers in the first tile are internal Meta numbers
+    pending COI clearance: #18 of 52,000 (pull-request rank, trailing 30 days)
+    and #40 of 52,000 (2026 year-to-date).
+  {% endcomment %}
+  <div class="stat-strip">
+    <div class="stat">
+      <span class="stat-num">#18 <span class="stat-of">/ 52,000</span></span>
+      <span class="stat-label">pull-request rank among Meta engineers, last 30 days</span>
+      <span class="stat-context">(#40 for 2026 year-to-date)</span>
+    </div>
+    {% comment %} end DEPLOY GATE {% endcomment %}
+    <div class="stat">
+      <span class="stat-num">5 years</span>
+      <span class="stat-label">shipping Instagram &amp; Facebook at Meta</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">1 operator, N agents</span>
+      <span class="stat-label">my fleet runs Idea &rarr; Research &rarr; Plan &rarr; Implement &rarr; Ship</span>
+    </div>
+  </div>
+
   <p>
-    <a href="/blog/" style="color: white; font-weight: bold;">Read the blog &rarr;</a>
+    <a href="/blog/" class="hero-cta">Read the blog &rarr;</a>
   </p>
 
 <!-- Begin Mailchimp Signup Form -->
@@ -79,78 +99,84 @@ layout: main
 
   <a href="/blog/">
     <div class="card">
-      <p><span>B</span> <strong>Blog</strong></p>
-      <p>Read some of the articles I've written.</p>
+      <p><span class="em-indigo">B</span> <strong>Blog</strong></p>
+      <p>Essays on agent-native engineering and how I work.</p>
     </div>
   </a>
 
   <a href="/about/">
     <div class="card">
-      <p><span>A</span> <strong>About</strong></p>
+      <p><span class="em-violet">A</span> <strong>About</strong></p>
       <p>Learn more about me.</p>
     </div>
   </a>
 
   <a href="/projects/">
     <div class="card">
-      <p><span>P</span> <strong>Projects</strong></p>
+      <p><span class="em-blue">P</span> <strong>Projects</strong></p>
       <p>I enjoy working on coding side projects.</p>
     </div>
   </a>
 
   <a href="/resume/SergeNevskyResume.pdf">
     <div class="card">
-      <p><span>R</span> <strong>Resume</strong></p>
+      <p><span class="em-navy">R</span> <strong>Resume</strong></p>
       <p>Click to download my resume.</p>
-    </div>
-  </a>
-
-  <a href="https://films.snevsky.com/">
-    <div class="card">
-      <p><span>F</span> <strong>Films</strong></p>
-      <p>A list of every single film I've seen in the last decade.</p>
     </div>
   </a>
 
   <a href="/now/">
     <div class="card">
-      <p><span>N</span> <strong>Now</strong></p>
+      <p><span class="em-teal">N</span> <strong>Now</strong></p>
       <p>See what I'm up to <strong>now</strong>.</p>
     </div>
   </a>
 
-  <a href="mailto:serge@snevsky.com">
-    <div class="card">
-      <p><span>@</span> <strong>E-mail</strong></p>
-      <p>Drop me a line over e-mail</p>
-    </div>
-  </a>
+</div>
 
-  <a href="/photography/">
+<h2 class="act-divider">Off the clock</h2>
+
+<div class="card-layout">
+
+  <a href="https://films.snevsky.com/">
     <div class="card">
-      <p><span>P</span> <strong>Photography</strong></p>
-      <img src="assets/img/fire-sword.jpg">
+      <p><span class="em-purple">F</span> <strong>Films</strong></p>
+      <p>A list of every single film I've seen in the last decade.</p>
     </div>
   </a>
 
   <a href="/music/">
     <div class="card">
-      <p><span>M</span> <strong>Music</strong></p>
+      <p><span class="em-plum">M</span> <strong>Music</strong></p>
       <p>I record and produce my own songs.</p>
+    </div>
+  </a>
+
+  <a href="/photography/">
+    <div class="card">
+      <p><span class="em-sky">P</span> <strong>Photography</strong></p>
+      <img src="assets/img/fire-sword.jpg" alt="Fire dancer" loading="lazy">
     </div>
   </a>
 
   <a href="/drawings/">
     <div class="card">
-      <p><span>D</span> <strong>Drawings</strong></p>
-      <img src="assets/img/classical-guitar.jpg">
+      <p><span class="em-cyan">D</span> <strong>Drawings</strong></p>
+      <img src="assets/img/classical-guitar.jpg" alt="Drawing of a classical guitar" loading="lazy">
     </div>
   </a>
 
   <a href="/museum/">
     <div class="card">
-      <p><span>M</span> <strong>Museum</strong></p>
+      <p><span class="em-grape">M</span> <strong>Museum</strong></p>
       <p>Websites I built starting at age seven, preserved.</p>
+    </div>
+  </a>
+
+  <a href="mailto:serge@snevsky.com">
+    <div class="card">
+      <p><span class="em-cobalt">@</span> <strong>E-mail</strong></p>
+      <p>Drop me a line over e-mail</p>
     </div>
   </a>
 

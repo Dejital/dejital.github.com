@@ -77,4 +77,3 @@ Given just how simple it was to spin this up, I'm tempted to jump further into h
 
 [See the source code on Github here.](https://github.com/Dejital/hueweather)
 
-{% include jumbo-blog.html %}

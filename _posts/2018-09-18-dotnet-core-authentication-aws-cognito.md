@@ -311,4 +311,3 @@ The response "Hello" should be returned with a status of `200 OK` as expected.
 
 This validates an entire successful flow of Authentication in ASP.NET Core Web API with Amazon Cognito!
 
-{% include jumbo-blog.html %}
