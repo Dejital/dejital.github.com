@@ -2,12 +2,6 @@
 layout: blog
 ---
 <style>
-    #empty-side-header {
-      display: none;
-    }
-    #comments-header {
-      display: block;
-    }
     #left-header {
       display: none;
     }
@@ -17,7 +11,7 @@ layout: blog
 </style>
 
 <article>
-  {% if page.image }%}
+  {% if page.image %}
   <img src="{{ page.image }}" alt="{{ page.title }}" class="article-header-img pure-img">
   {% endif %}
 
@@ -43,7 +37,7 @@ layout: blog
       {% endif %}
     </div>
   </div>
-
-  {% include comments.html %}
 </nav>
+
+{% include newsletter.html %}
 

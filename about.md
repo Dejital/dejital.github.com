@@ -8,7 +8,7 @@ permalink: '/about/'
 
 ## About
 
-I am a software engineer from Kansas City, [currently at Meta](http://linkedin.snevsky.com)
+I am a software engineer from Kansas City, [currently at Meta](https://linkedin.snevsky.com)
 working on the Instagram and Facebook apps — and on the more interesting
 problem of how engineers should work now that AI agents can do real
 engineering.
@@ -49,12 +49,12 @@ Also, see what I'm up to [now](/now/).
 Follow and connect with me on these networks:
 
 <ul style="column-count: 2; column-gap: 2em;">
-  <li><a href="http://linkedin.snevsky.com">LinkedIn</a></li>
-  <li><a href="http://instagram.snevsky.com">Instagram</a></li>
-  <li><a href="http://facebook.snevsky.com">Facebook</a></li>
-  <li><a href="http://twitter.snevsky.com">Twitter</a></li>
-  <li><a href="http://github.snevsky.com">Github</a></li>
-  <li><a href="http://lastfm.snevsky.com">Last.fm</a></li>
-  <li><a href="http://flickr.snevsky.com">Flickr</a></li>
+  <li><a href="https://linkedin.snevsky.com">LinkedIn</a></li>
+  <li><a href="https://instagram.snevsky.com">Instagram</a></li>
+  <li><a href="https://facebook.snevsky.com">Facebook</a></li>
+  <li><a href="https://twitter.snevsky.com">Twitter</a></li>
+  <li><a href="https://github.snevsky.com">Github</a></li>
+  <li><a href="https://lastfm.snevsky.com">Last.fm</a></li>
+  <li><a href="https://flickr.snevsky.com">Flickr</a></li>
   <li><a href="mailto:serge@snevsky.com">E-mail</a></li>
 </ul>
