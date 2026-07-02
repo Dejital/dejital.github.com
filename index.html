@@ -29,14 +29,29 @@ layout: main
     color: #fff;
     border-bottom-color: rgba(255, 255, 255, 0.5);
   }
+  /* Gold accents: the ♫ and the primary CTA underline (every state, so the
+     white override above can't clobber them). */
+  .heading strong a, .heading strong a:link, .heading strong a:visited,
+  .heading strong a:hover, .heading strong a:visited:hover {
+    color: #ffd54f;
+    border-bottom: none;
+  }
+  .heading .hero-cta, .heading .hero-cta:link, .heading .hero-cta:visited,
+  .heading .hero-cta:active {
+    border-bottom-color: #ffd54f;
+  }
+  .heading .hero-cta:hover, .heading .hero-cta:visited:hover {
+    border-bottom-color: #ffe58a;
+  }
 </style>
 
 <div class="heading">
+  <p class="hero-kicker">Kansas City <span class="dot">&middot;</span> Software engineer at Meta</p>
   <strong>
     Hello, my name is Serge Nevsky <a href="#" onclick="document.getElementById('pronounce').play()">&#9835;</a>
   </strong>
   <p class="hero-lede">
-    I run fleets of AI agents that ship production software.
+    I run <em>fleets of AI&nbsp;agents</em> that ship production software.
   </p>
   {% comment %}
     DEPLOY GATE: the "most prolific engineers in the company" sentence below
@@ -44,13 +59,13 @@ layout: main
     clearance fails.
   {% endcomment %}
   <p class="hero-sub">
-    Software engineer at <i>Meta</i>. I built the orchestration system that
-    made me one of the most prolific engineers in the company &mdash; and I
-    write about how it works.
+    I built the orchestration system that made me one of the most prolific
+    engineers in the company &mdash; and I write about how it works.
   </p>
 
-  <p>
+  <p class="hero-cta-row">
     <a href="/blog/" class="hero-cta">Read the blog &rarr;</a>
+    <a href="/about/" class="hero-cta-quiet">About me</a>
   </p>
 
 <!-- Begin Mailchimp Signup Form -->
