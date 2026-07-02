@@ -36,6 +36,7 @@ beyond anything I thought possible, and I now help lead agent adoption across
 my organization. I [write](/blog/) about agent-native engineering: how
 individual engineers multiply their output, and how organizations make the
 jump without drowning in unreviewed slop.
+{% comment %} DEPLOY GATE: internal Meta stats — remove or confirm COI clearance before deploy {% endcomment %} By the numbers: #40 of 52,000 Meta engineers by shipped pull requests in 2026 so far — #18 over the trailing 30 days.
 
 In my free time I play piano and stringed instruments, write and record
 [music](/music/), snap [photographs](/photography/), and spend time with my

@@ -293,55 +293,6 @@ footer a:hover {
     font-size: 1.1rem;
 }
 
-.stat-strip {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    margin: 1.75rem auto;
-    text-align: left;
-}
-
-.stat {
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.22);
-    border-radius: 0.5rem;
-    padding: 1rem 1.1rem;
-}
-
-.stat-num {
-    display: block;
-    font-size: clamp(1.25rem, 1.1rem + 0.9vw, 1.7rem);
-    font-weight: 700;
-    line-height: 1.2;
-}
-
-.stat-of {
-    font-size: 0.65em;
-    font-weight: 600;
-    opacity: 0.8;
-}
-
-.stat-label {
-    display: block;
-    font-size: 0.85rem;
-    line-height: 1.4;
-    margin-top: 0.4em;
-    opacity: 0.88;
-}
-
-.stat-context {
-    display: block;
-    font-size: 0.75rem;
-    margin-top: 0.3em;
-    opacity: 0.7;
-}
-
-@media (max-width: 700px) {
-    .stat-strip {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* ---------------------------------------------------------------------------
    Card grid — two acts, deliberate order, per-card emblem accents.
 --------------------------------------------------------------------------- */

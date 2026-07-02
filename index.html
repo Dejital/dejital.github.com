@@ -18,8 +18,16 @@ layout: main
     max-width: 960px;
     padding: 0 1rem;
   }
-  footer a, footer a:active, footer a:visited {
+  footer a, footer a:active, footer a:visited, footer a:hover {
     color: white;
+  }
+  /* screen.css's global link rules (main a:visited, main a:visited:hover)
+     out-specificity .heading a for visited/hovered states, going indigo
+     on this indigo hero — force white in every state, scoped to the homepage. */
+  .heading a, .heading a:link, .heading a:visited,
+  .heading a:hover, .heading a:visited:hover, .heading a:active {
+    color: #fff;
+    border-bottom-color: rgba(255, 255, 255, 0.5);
   }
 </style>
 
@@ -31,33 +39,15 @@ layout: main
     I run fleets of AI agents that ship production software.
   </p>
   {% comment %}
-    DEPLOY GATE: everything from the hero sub-line through the first stat tile
-    derives from internal Meta metrics — confirm COI clearance and exact figures
-    before merge. Figures: #18 of 52,000 (pull-request rank, trailing 30 days),
-    #40 of 52,000 (2026 year-to-date). The "most prolific engineers in the
-    company" sentence is also ranking-derived; soften it too if clearance fails.
+    DEPLOY GATE: the "most prolific engineers in the company" sentence below
+    is ranking-derived — confirm COI clearance before merge, soften it if
+    clearance fails.
   {% endcomment %}
   <p class="hero-sub">
     Software engineer at <i>Meta</i>. I built the orchestration system that
     made me one of the most prolific engineers in the company &mdash; and I
     write about how it works.
   </p>
-  <div class="stat-strip">
-    <div class="stat">
-      <span class="stat-num">#18 <span class="stat-of">/ 52,000</span></span>
-      <span class="stat-label">pull-request rank among Meta engineers, last 30 days</span>
-      <span class="stat-context">(#40 for 2026 year-to-date)</span>
-    </div>
-    {% comment %} end DEPLOY GATE {% endcomment %}
-    <div class="stat">
-      <span class="stat-num">5 years</span>
-      <span class="stat-label">shipping Instagram &amp; Facebook at Meta</span>
-    </div>
-    <div class="stat">
-      <span class="stat-num">1 operator, N agents</span>
-      <span class="stat-label">my fleet runs Idea &rarr; Research &rarr; Plan &rarr; Implement &rarr; Ship</span>
-    </div>
-  </div>
 
   <p>
     <a href="/blog/" class="hero-cta">Read the blog &rarr;</a>
@@ -138,7 +128,7 @@ layout: main
 
 <div class="card-layout">
 
-  <a href="https://films.snevsky.com/">
+  <a href="https://snevsky.com/films/">
     <div class="card">
       <p><span class="em-purple">F</span> <strong>Films</strong></p>
       <p>A list of every single film I've seen in the last decade.</p>
@@ -155,14 +145,14 @@ layout: main
   <a href="/photography/">
     <div class="card">
       <p><span class="em-sky">P</span> <strong>Photography</strong></p>
-      <img src="assets/img/fire-sword.jpg" alt="Fire dancer" loading="lazy">
+      <p>Photos from my mirrorless camera.</p>
     </div>
   </a>
 
   <a href="/drawings/">
     <div class="card">
       <p><span class="em-cyan">D</span> <strong>Drawings</strong></p>
-      <img src="assets/img/classical-guitar.jpg" alt="Drawing of a classical guitar" loading="lazy">
+      <p>Sketches and doodles over the years.</p>
     </div>
   </a>
 
