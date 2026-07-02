@@ -8,33 +8,36 @@ permalink: '/about/'
 
 ## About
 
-I am a software engineer from Kansas City. 
-I'm [currently working at Meta](http://linkedin.snevsky.com) 
+I am a software engineer from Kansas City, [currently at Meta](http://linkedin.snevsky.com)
+working on the Instagram and Facebook apps — and on the more interesting
+problem of how engineers should work now that AI agents can do real
+engineering.
 
-I was born in Russia and moved to Kansas City as a child. I began
-making websites at age seven for myself, ranging from artwork to 
-webcomics to games, and hosting them on Geocities. I took an interest in
-user experience, web design and graphics.
+I was born in Russia and moved to Kansas City as a child. I began making
+websites at age seven for myself, ranging from artwork to webcomics to games,
+and hosting them on Geocities. In college I studied Mathematics, French and
+Philosophy, and lived in the terminal — essays in `LaTeX`, email in `mutt`,
+schoolwork in `git`.
 
-In college I studied Mathematics, French and Philosophy. 
-In that time I gained a love for `unix` and spent the
-majority of my time in the terminal, writing essays in `LaTeX`, emails
-in `mutt` and maintaining schoolwork with `git`.
+I spent my early career across Kansas City startups and enterprises, leading
+teams, designing distributed systems, and teaching: I built an all-day
+distributed systems course that became required training for every engineering
+level at my company. In 2021 I joined Meta.
 
-In my career I worked in both small startups and large companies in Kansas City.
-Now I work remotely for Meta on the Instagram and Facebook apps.
+<!-- TODO(COI): after Meta outside-work clearance, add specific shipped-output
+     stats here. Keep internal program names out regardless. -->
+Then agents changed everything. I went all-in: I built my own agent
+orchestration system — a lifecycle that takes work from **idea** through
+**research**, **planning**, **implementation**, and **shipping**, with a fleet
+of AI agents doing the heavy lifting at every phase. Running it made me one of
+the most prolific engineers at Meta by shipped output, and I now help lead
+agent adoption across my organization. I [write](/blog/) and
+[teach](/consulting/) about agent-native engineering: how individual engineers
+multiply their output, and how organizations make the jump without drowning in
+unreviewed slop.
 
-I enjoy working at a fast pace, on a small team, and in full stack development. 
-I am passionate about building high quality products with great user
-experiences.
-
-I subscribe to the [Manifesto for Agile Software
-Development](http://agilemanifesto.org/), Clean Code, YAGNI and SOLID
-design principles. I favor custom solutions over common patterns and 
-practices.
-
-In my free time I like to work on side projects, play stringed
-instruments, snap photographs and spend time with my
+In my free time I play piano and stringed instruments, write and record
+[music](/music/), snap [photographs](/photography/), and spend time with my
 wife, daughter, family and friends.
 
 See my [résumé](https://snevsky.com/resume/SergeNevskyResume.pdf).
