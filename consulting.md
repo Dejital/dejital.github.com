@@ -2,10 +2,13 @@
 layout: main
 title: Consulting
 permalink: '/consulting/'
+published: false
 ---
 
-<!-- TODO(COI): do not deploy this page until the Meta outside-work disclosure
-     is filed and approved. Everything else on the branch is deployable. -->
+{% comment %}
+  published: false — this page does not build. Flip it only after the Meta
+  outside-work disclosure is filed and approved.
+{% endcomment %}
 
 ## Work with me
 

@@ -24,17 +24,18 @@ teams, designing distributed systems, and teaching: I built an all-day
 distributed systems course that became required training for every engineering
 level at my company. In 2021 I joined Meta.
 
-<!-- TODO(COI): after Meta outside-work clearance, add specific shipped-output
-     stats here. Keep internal program names out regardless. -->
+{% comment %}
+  Stealth until Meta outside-work clearance: no internal stats, no
+  company-ranking claims, no consulting links. Revisit after clearance.
+{% endcomment %}
 Then agents changed everything. I went all-in: I built my own agent
 orchestration system — a lifecycle that takes work from **idea** through
 **research**, **planning**, **implementation**, and **shipping**, with a fleet
-of AI agents doing the heavy lifting at every phase. Running it made me one of
-the most prolific engineers at Meta by shipped output, and I now help lead
-agent adoption across my organization. I [write](/blog/) and
-[teach](/consulting/) about agent-native engineering: how individual engineers
-multiply their output, and how organizations make the jump without drowning in
-unreviewed slop.
+of AI agents doing the heavy lifting at every phase. It multiplied what I ship
+beyond anything I thought possible, and I now help lead agent adoption across
+my organization. I [write](/blog/) about agent-native engineering: how
+individual engineers multiply their output, and how organizations make the
+jump without drowning in unreviewed slop.
 
 In my free time I play piano and stringed instruments, write and record
 [music](/music/), snap [photographs](/photography/), and spend time with my
