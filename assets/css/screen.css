@@ -379,7 +379,9 @@ footer a:hover {
 
     .hero-portrait {
         position: absolute;
-        inset: 0 0 0 32%;
+        /* right edge hangs 12% past the viewport (hero clips it) so the
+           face sits right of the heading text; tune the -12% to taste */
+        inset: 0 -12% 0 32%;
         margin: 0;
         z-index: 0;
     }
