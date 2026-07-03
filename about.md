@@ -9,14 +9,14 @@ permalink: '/about/'
 ## About
 
 I am a software engineer from Kansas City, [currently at Meta](https://www.linkedin.com/in/snevsky/)
-working on the Instagram and Facebook apps — and on the more interesting
+working on the Instagram and Facebook apps, and on the more interesting
 problem of how engineers should work now that AI agents can do real
 engineering.
 
 I was born in Russia and moved to Kansas City as a child. I began making
 websites at age seven for myself, ranging from artwork to webcomics to games,
 and hosting them on Geocities. In college I studied Mathematics, French and
-Philosophy, and lived in the terminal — essays in `LaTeX`, email in `mutt`,
+Philosophy, and lived in the terminal: essays in `LaTeX`, email in `mutt`,
 schoolwork in `git`.
 
 I spent my early career across Kansas City startups and enterprises, leading
@@ -25,18 +25,20 @@ distributed systems course that became required training for every engineering
 level at my company. In 2021 I joined Meta.
 
 {% comment %}
-  DEPLOY GATE: this paragraph contains an internal Meta stat (#35 of 52,000+)
-  and an internal program name ("Agent Captain") — confirm COI clearance
-  before deploy, or soften both.
+  DEPLOY GATE: the two paragraphs below contain an internal Meta stat (#35 of
+  52,000+) and an internal program name ("Agent Captain") — confirm COI
+  clearance before deploy, or soften both.
 {% endcomment %}
 Then agents changed everything. I went all-in and built my own agent factory:
-a harness that manages the whole development lifecycle — **idea**,
-**research**, **plan**, **implement**, **deploy** — with a fleet of AI agents
+a harness that manages the whole development lifecycle (**idea**,
+**research**, **plan**, **implement**, **deploy**) with a fleet of AI agents
 doing the heavy lifting at every phase. The result: one of the most productive
 engineers at Meta, ranked #35 of 52,000+ by merged pull requests in 2026,
 shipping across Facebook, Instagram, Messenger and internal tools on web and
-mobile. I serve as an Agent Captain in my org — leading agent adoption across
-the organization — and I [write](/blog/) about agent-native engineering. The
+mobile.
+
+I serve as an Agent Captain in my org, leading agent adoption across
+the organization, and I [write](/blog/) about agent-native engineering. The
 best part of my job is the automation itself: every piece of busywork I hand
 to the fleet buys back time for the creative work of building products people
 love.

@@ -362,7 +362,10 @@ footer a:hover {
         gap: 0;
         position: relative;
         overflow: hidden;
-        border-radius: 16px;
+        border-radius: 0;
+        /* full-bleed: break out of .content's centered column */
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
         padding: 2.5em 1.25em 1.5em;
     }
 
@@ -373,7 +376,7 @@ footer a:hover {
 
     .hero-portrait {
         position: absolute;
-        inset: 0 0 0 25%;
+        inset: 0 0 0 32%;
         margin: 0;
         z-index: 0;
     }
@@ -393,11 +396,11 @@ footer a:hover {
         inset: 0;
         /* rgba fallback, then color-mix (tracks --hero-bg in dark mode) */
         background: linear-gradient(90deg,
-            #3f51b5 0%, rgba(63, 81, 181, 0.82) 45%, rgba(63, 81, 181, 0.45) 100%);
+            #3f51b5 0%, rgba(63, 81, 181, 0.74) 40%, rgba(63, 81, 181, 0.28) 100%);
         background: linear-gradient(90deg,
             var(--hero-bg) 0%,
-            color-mix(in srgb, var(--hero-bg) 82%, transparent) 45%,
-            color-mix(in srgb, var(--hero-bg) 45%, transparent) 100%);
+            color-mix(in srgb, var(--hero-bg) 74%, transparent) 40%,
+            color-mix(in srgb, var(--hero-bg) 28%, transparent) 100%);
     }
 }
 

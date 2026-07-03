@@ -13,7 +13,7 @@ published: false
 ## Work with me
 
 Most engineering organizations bought AI coding tools and saw nothing change.
-The tools aren't the problem — the workflow is. Autocomplete makes an engineer
+The tools aren't the problem; the workflow is. Autocomplete makes an engineer
 5% faster. Orchestrated agent fleets, run with the right process, multiply how
 much a team ships.
 
@@ -35,9 +35,9 @@ adoption to show up in shipped work, not just in license spend.
 - **Team workshop (1 day).** Hands-on with your engineers, in your codebase:
   the Idea → Research → Plan → Implement → Ship lifecycle, orchestration
   mechanics, and the harness setup that makes agent output trustworthy.
-- **Bootcamp (2 days).** The workshop plus a fleet day — your teams run a real
-  feature end-to-end with agents — and a leadership working session to draft
-  your rollout plan.
+- **Bootcamp (2 days).** The workshop plus a fleet day, where your teams run a
+  real feature end-to-end with agents, and a leadership working session to
+  draft your rollout plan.
 - **Enablement retainer (monthly).** Office hours, architecture review, and
   rollout coaching while your adoption takes hold.
 
@@ -47,7 +47,7 @@ adoption to show up in shipped work, not just in license spend.
 behavior, different context, and different human checkpoints. Teams that skip
 straight to "implement" get slop; teams that run the full lifecycle get
 production code at multiples of their old throughput. This is the system I use
-for my own work every day — I teach what I operate.
+for my own work every day: I teach what I operate.
 
 ### Get in touch
 
