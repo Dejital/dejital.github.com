@@ -354,6 +354,12 @@ footer a:hover {
     box-shadow: 0 14px 36px rgba(0, 0, 0, 0.3);
 }
 
+/* mobile-only line break in the kicker (re-enabled in the 760px media query,
+   which must come after this rule in source order) */
+.kicker-br {
+    display: none;
+}
+
 /* On small screens the portrait becomes a right-side background with an
    indigo wash, and the hero text reads over it. */
 @media (max-width: 760px) {
@@ -424,11 +430,6 @@ footer a:hover {
                 color-mix(in srgb, var(--hero-bg) 74%, transparent) 40%,
                 color-mix(in srgb, var(--hero-bg) 28%, transparent) 100%);
     }
-}
-
-/* mobile-only line break in the kicker (shown in the 760px media query) */
-.kicker-br {
-    display: none;
 }
 
 .hero-kicker {
