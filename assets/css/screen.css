@@ -1165,3 +1165,11 @@ article blockquote p, main blockquote p {
     color: var(--muted);
     font-size: inherit;
 }
+
+/* Contact strip — quiet mono contact row at the top of the about page */
+.contact-strip {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin: 0 0 1.4rem;
+}

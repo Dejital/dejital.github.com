@@ -5,6 +5,13 @@ kicker: The story so far
 permalink: '/about/'
 ---
 
+<p class="contact-strip">
+  <a href="mailto:serge@snevsky.com">serge@snevsky.com</a> &middot;
+  <a href="https://www.linkedin.com/in/snevsky/">LinkedIn</a> &middot;
+  <a href="https://github.com/dejital">GitHub</a> &middot;
+  <a href="/resume/SergeNevskyResume.pdf">Resume (PDF)</a>
+</p>
+
 <img src="/assets/img/serge-nevsky-late-night.jpg" alt="Serge Nevsky in Kansas City" class="pure-img">
 
 I am a software engineer from Kansas City, [currently at Meta](https://www.linkedin.com/in/snevsky/)
