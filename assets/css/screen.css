@@ -177,9 +177,10 @@ article .article-header-img {
 
 article {
     padding-top: 0.5em;
-    font-family: var(--font-serif);
-    font-size: clamp(1.1rem, 1.05rem + 0.3vw, 1.25rem);
+    font-family: var(--font-ui);
+    font-size: clamp(1.05rem, 1rem + 0.3vw, 1.2rem);
     line-height: 1.65;
+    letter-spacing: 0.002em;
 }
 
 article pre {
