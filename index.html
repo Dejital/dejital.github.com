@@ -43,6 +43,25 @@ layout: main
   .heading .hero-cta:hover, .heading .hero-cta:visited:hover {
     border-bottom-color: #ffe58a;
   }
+  /* Newsletter on the indigo hero: frosted input, gold button. */
+  .heading .mc-row input.email {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.4);
+    color: #fff;
+  }
+  .heading .mc-row input.email::placeholder {
+    color: rgba(255, 255, 255, 0.65);
+  }
+  .heading .mc-row input.email:focus {
+    border-color: #ffd54f;
+  }
+  .heading .mc-row .button {
+    background: #ffd54f;
+    color: #1a1c3a;
+  }
+  .heading .mc-row .button:hover {
+    background: #ffe58a;
+  }
 </style>
 
 <div class="heading">
@@ -68,35 +87,14 @@ layout: main
     <a href="/about/" class="hero-cta-quiet">About me</a>
   </p>
 
-<!-- Begin Mailchimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-	#mc_embed_signup{background:transparent; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-  #mc_embed_signup .button {
-    box-shadow: 0 1px 1px rgba(23,43,77,0.6),
-      0 0 0.5px 0 rgba(23,43,77,0.65);
-    font-size: 15px;
-    height: 38px;
-  }
-  #mc_embed_signup input.email {
-    font-size: 15px;
-    padding: 1.2em 1em;
-    box-shadow: 0 1px 1px rgba(23,43,77,0.6),
-      0 0 0.5px 0 rgba(23,43,77,0.65);
-  }
-</style>
-<div id="mc_embed_signup">
-<form action="https://snevsky.us7.list-manage.com/subscribe/post?u=b4c45bc7d83cfb9a04783878e&amp;id=b3c0dba86b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Get my essays on agent-native engineering" required>
+<form action="https://snevsky.us7.list-manage.com/subscribe/post?u=b4c45bc7d83cfb9a04783878e&amp;id=b3c0dba86b" method="post" class="mc-form" target="_blank" novalidate>
+  <div class="mc-row">
+    <input type="email" value="" name="EMAIL" class="email" placeholder="Get my essays on agent-native engineering" required>
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b4c45bc7d83cfb9a04783878e_b3c0dba86b" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
+    <input type="submit" value="Subscribe" name="subscribe" class="button">
+  </div>
 </form>
-</div>
 
 </div>
 

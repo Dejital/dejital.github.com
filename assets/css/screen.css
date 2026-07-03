@@ -368,6 +368,59 @@ footer a:hover {
 }
 
 /* ---------------------------------------------------------------------------
+   Newsletter form (Mailchimp endpoint, our styling — no CDN CSS)
+--------------------------------------------------------------------------- */
+.mc-form {
+    max-width: 30rem;
+}
+
+.mc-label {
+    display: block;
+    font-family: var(--font-ui);
+    font-size: 0.92rem;
+    color: var(--muted);
+    margin-bottom: 0.6em;
+}
+
+.mc-row {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.mc-row input.email {
+    flex: 1 1 14rem;
+    padding: 0.7em 0.9em;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    font-family: var(--font-ui);
+    font-size: 0.95rem;
+}
+
+.mc-row input.email:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.mc-row .button {
+    padding: 0.7em 1.3em;
+    border-radius: 6px;
+    border: none;
+    background: var(--accent);
+    color: #fff;
+    font-family: var(--font-ui);
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.mc-row .button:hover {
+    background: var(--accent-hover);
+}
+
+/* ---------------------------------------------------------------------------
    Card grid — two acts, deliberate order, per-card emblem accents.
 --------------------------------------------------------------------------- */
 .card-layout {
