@@ -18,8 +18,13 @@ layout: main
     max-width: 960px;
     padding: 0 1rem;
   }
-  footer a, footer a:active, footer a:visited, footer a:hover {
-    color: white;
+  /* Quiet on the indigo hero too: muted white by default, full white on hover
+     (mirrors the muted -> text treatment in screen.css for light/dark). */
+  footer a, footer a:active, footer a:visited {
+    color: rgba(255, 255, 255, 0.65);
+  }
+  footer a:hover {
+    color: #fff;
   }
   /* screen.css's global link rules (main a:visited, main a:visited:hover)
      out-specificity .heading a for visited/hovered states, going indigo

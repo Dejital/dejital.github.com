@@ -236,15 +236,19 @@ article a:hover, article a:visited:hover {
 }
 
 footer a, footer a:active, footer a:visited {
-    color: var(--link);
+    display: inline-block;
+    color: var(--muted);
     text-decoration: none;
-    font-weight: bold;
+    font-weight: normal;
     border: none;
-    font-size: 34px;
+    font-size: 20px;
+    line-height: 1;
+    padding: 12px 16px; /* keeps tap target ~44px even though the glyph shrank */
+    transition: color 0.15s ease;
 }
 
 footer a:hover {
-    color: var(--link-hover);
+    color: var(--text);
 }
 
 /* ---------------------------------------------------------------------------
