@@ -2,6 +2,7 @@
 layout: post
 title: Interviewing developers
 image: /assets/img/applicant.png
+description: "Companies that cannot hire engineers usually have a draining interview process. How to fix the phone screen and make candidates want to join."
 ---
 
 I hear it a lot in Kansas City: _"We can't find good engineering talent,"_ followed 

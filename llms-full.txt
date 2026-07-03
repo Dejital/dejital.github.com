@@ -1,0 +1,18 @@
+---
+permalink: /llms-full.txt
+layout: null
+sitemap: false
+---
+# Serge Nevsky: blog posts, full text
+
+> Software engineer at Meta practicing agent-native engineering: running fleets of AI agents that ship production software. This file contains every post from https://snevsky.com/blog/ in full. Index: https://snevsky.com/llms.txt
+{% for post in site.posts %}
+---
+
+## {{ post.title }}
+
+Date: {{ post.date | date: "%Y-%m-%d" }}
+URL: {{ post.url | absolute_url }}
+
+{{ post.content | strip_html | strip }}
+{% endfor %}

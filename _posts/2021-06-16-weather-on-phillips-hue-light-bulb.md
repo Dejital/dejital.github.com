@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Checking the Weather with Phillips Hue Light Bulbs
+description: "I wired Phillips Hue bulbs to the OpenWeatherMap API so a painting of Paris shows the current weather: Python, Docker, and two hours of coding."
 ---
 
 Working from home during the pandemic created opportunities for short walks throughout the day. With a baby, this is all the more tempting. Unfortunately the weather in Kansas is neither cooperative nor predictable. This meant frequent lookups of current weather conditions.

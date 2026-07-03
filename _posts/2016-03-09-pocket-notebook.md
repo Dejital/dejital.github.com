@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The perfect notebook system for getting things done
+description: "The best pocket notebook system is no system: a few loose rules, two pages a day, and freedom for tasks, packing lists, workouts, and sketches."
 ---
 
 I accidentally invented the single best system to keep a pocket notebook.

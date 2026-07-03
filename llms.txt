@@ -1,0 +1,40 @@
+---
+permalink: /llms.txt
+layout: null
+sitemap: false
+---
+# Serge Nevsky
+
+> Software engineer at Meta practicing agent-native engineering: running fleets of AI agents that ship production software.
+
+I built an agent orchestration harness that manages the whole development
+lifecycle (idea, research, plan, implement, deploy) with a fleet of AI agents
+doing the heavy lifting at every phase. It made me one of the most productive
+engineers at Meta, shipping across Facebook, Instagram, Messenger and internal
+tools on web and mobile. I serve as an Agent Captain in my org, leading agent
+adoption, and I write about how the system works. Based in Kansas City. Before
+Meta I led teams, designed distributed systems, and taught engineering courses
+at Kansas City startups and enterprises.
+
+## Pages
+
+- [About](https://snevsky.com/about/): the career arc, from building websites at age seven to running agent fleets at Meta
+- [Blog](https://snevsky.com/blog/): essays on agent-native engineering and how I work
+- [Now](https://snevsky.com/now/): what I am up to right now
+- [Projects](https://snevsky.com/projects/): coding side projects
+- [Resume (PDF)](https://snevsky.com/resume/SergeNevskyResume.pdf)
+- [Contact](https://snevsky.com/contact/): talk to me about agent-native engineering
+
+## Blog posts
+
+{% for post in site.posts %}- [{{ post.title }}]({{ post.url | absolute_url }}) ({{ post.date | date: "%Y-%m-%d" }})
+{% endfor %}
+## Elsewhere
+
+- [GitHub](https://github.com/dejital)
+- [LinkedIn](https://www.linkedin.com/in/snevsky/)
+- [X](https://twitter.com/sergenevsky)
+
+## Full content
+
+- [llms-full.txt](https://snevsky.com/llms-full.txt): every blog post in full

@@ -2,6 +2,7 @@
 layout: post
 title: It’s the little things in my Google Inbox
 image: /assets/img/google-inbox-sun.png
+description: "Google Inbox is not a breakthrough, but its swipes, snoozing, and clear-sky reward screen make email feel pleasant again. A short appreciation."
 ---
 
 [Google Inbox](http://www.google.com/inbox/) isn’t some great innovation in the industry. It’s just one step toward making e-mail fun again.

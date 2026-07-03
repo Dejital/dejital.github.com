@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Authentication in ASP.NET Core Web API with Amazon Cognito
+description: "Step-by-step guide to Amazon Cognito authentication in an ASP.NET Core Web API: user pools, app clients, bearer tokens, and C# code samples."
 ---
 
 [Amazon Cognito](https://aws.amazon.com/cognito/) is the user management and authentication product in AWS. It allows for unified sign-up and sign-in flows across web and mobile apps. 

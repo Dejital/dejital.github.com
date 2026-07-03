@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Building a Newborn Simulator
+description: "I built a browser game over paternity leave that simulates caring for a newborn: feed, change, rest, and manage your own stamina. Built with React."
 ---
 
 The mechanics of caring for a newborn child are surprising and fascinating.
