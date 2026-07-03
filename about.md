@@ -9,7 +9,7 @@ permalink: '/about/'
   <a href="mailto:serge@snevsky.com">serge@snevsky.com</a> &middot;
   <a href="https://www.linkedin.com/in/snevsky/">LinkedIn</a> &middot;
   <a href="https://github.com/dejital">GitHub</a> &middot;
-  <a href="/resume/SergeNevskyResume.pdf">Resume (PDF)</a>
+  <a href="/resume/">Resume</a>
 </p>
 
 <img src="/assets/img/serge-nevsky-late-night.jpg" alt="Serge Nevsky in Kansas City" class="pure-img">
@@ -47,7 +47,7 @@ In my free time I play piano and stringed instruments, write and record
 [music](/music/), snap [photographs](/photography/), and spend time with my
 wife, kids, family and friends.
 
-See my [résumé](https://snevsky.com/resume/SergeNevskyResume.pdf).
+See my [résumé](/resume/).
 Also, see what I'm up to [now](/now/).
 
 ### Social Networks
