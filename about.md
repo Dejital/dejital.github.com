@@ -40,7 +40,7 @@ jump without drowning in unreviewed slop.
 
 In my free time I play piano and stringed instruments, write and record
 [music](/music/), snap [photographs](/photography/), and spend time with my
-wife, daughter, family and friends.
+wife, kids, family and friends.
 
 See my [résumé](https://snevsky.com/resume/SergeNevskyResume.pdf).
 Also, see what I'm up to [now](/now/).
