@@ -31,8 +31,8 @@ doing the heavy lifting at every phase. The result: I ship multiples of what
 I used to, across Facebook, Instagram, Messenger and internal tools on web
 and mobile.
 
-I help lead agent adoption across my org, and I
-[write](/blog/) about agent-native engineering. The
+I serve as an Agent Captain in my org, leading agent adoption across
+the organization, and I [write](/blog/) about agent-native engineering. The
 best part of my job is the automation itself: every piece of busywork I hand
 to the fleet buys back time for the creative work of building products people
 love.
