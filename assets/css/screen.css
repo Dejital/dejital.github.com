@@ -377,6 +377,15 @@ footer a:hover {
         z-index: 1;
     }
 
+    /* kicker breaks onto two lines; the dot separator makes no sense stacked */
+    .kicker-br {
+        display: inline;
+    }
+
+    .hero-kicker .dot {
+        display: none;
+    }
+
     .hero-portrait {
         position: absolute;
         /* right edge hangs 12% past the viewport (hero clips it) so the
@@ -415,6 +424,11 @@ footer a:hover {
                 color-mix(in srgb, var(--hero-bg) 74%, transparent) 40%,
                 color-mix(in srgb, var(--hero-bg) 28%, transparent) 100%);
     }
+}
+
+/* mobile-only line break in the kicker (shown in the 760px media query) */
+.kicker-br {
+    display: none;
 }
 
 .hero-kicker {
