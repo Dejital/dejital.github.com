@@ -459,11 +459,16 @@ footer a:hover {
     color: var(--gold);
 }
 
-.heading strong {
+/* the h1 is the greeting line: semantic title for name searches, styled as
+   the small mono line it always was */
+.heading strong,
+.heading h1 {
     font-family: var(--font-mono);
     font-size: 1rem;
     font-weight: 400;
     letter-spacing: 0;
+    line-height: 1.5;
+    margin: 0;
     color: rgba(255, 255, 255, 0.75);
 }
 

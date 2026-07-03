@@ -1,5 +1,5 @@
 title: Serge Nevsky
-description: Agent-native engineering — running fleets of AI agents that ship production software. Serge Nevsky, software engineer at Meta.
+description: Agent-native engineering. Running fleets of AI agents that ship production software. Serge Nevsky, software engineer at Meta.
 url: https://snevsky.com
 author: Serge Nevsky
 permalink: "/blog/:title"
@@ -8,10 +8,9 @@ highlighter: rouge
 
 # Default og:image for static pages only (posts render page.image as a header
 # image in _layouts/post.html, so a site-wide default would leak into post bodies).
-# TODO: replace with a purpose-made 1200x630 OG card when one exists.
 defaults:
   - scope:
       path: ""
       type: pages
     values:
-      image: /assets/img/serge-nevsky-late-night.jpg
+      image: /assets/img/og-card.jpg

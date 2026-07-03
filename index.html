@@ -47,7 +47,9 @@ layout: main
   /* Gold accents: the ♫ and the primary CTA underline (every state, so the
      white override above can't clobber them). */
   .heading strong a, .heading strong a:link, .heading strong a:visited,
-  .heading strong a:hover, .heading strong a:visited:hover {
+  .heading strong a:hover, .heading strong a:visited:hover,
+  .heading h1 a, .heading h1 a:link, .heading h1 a:visited,
+  .heading h1 a:hover, .heading h1 a:visited:hover {
     color: #ffd54f;
     border-bottom: none;
   }
@@ -82,9 +84,9 @@ layout: main
 <div class="heading">
 <div class="hero-text">
   <p class="hero-kicker">Kansas City <span class="dot">&middot;</span><br class="kicker-br"> Software engineer at Meta</p>
-  <strong>
+  <h1>
     Hello, my name is Serge Nevsky <a href="#" onclick="document.getElementById('pronounce').play()">&#9835;</a>
-  </strong>
+  </h1>
   <p class="hero-lede">
     I run <em>fleets of AI&nbsp;agents</em> that ship production software.
   </p>
@@ -116,6 +118,24 @@ layout: main
 </figure>
 
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Serge Nevsky",
+  "url": "https://snevsky.com",
+  "image": "https://snevsky.com/assets/img/portrait-640.jpg",
+  "jobTitle": "Software Engineer",
+  "worksFor": { "@type": "Organization", "name": "Meta" },
+  "description": "Agent-native engineering: running fleets of AI agents that ship production software.",
+  "sameAs": [
+    "https://www.linkedin.com/in/snevsky/",
+    "https://github.com/dejital",
+    "https://twitter.com/sergenevsky"
+  ]
+}
+</script>
 
 <div class="card-layout">
 
