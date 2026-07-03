@@ -347,13 +347,14 @@ article a:hover, article a:visited:hover {
     font-family: var(--font-ui);
 }
 
+/* no font-size on the container: 65ch must compute at the body size so the
+   footer column matches main's 65ch exactly */
 .site-footer {
     max-width: 65ch;
     margin: 3rem auto 2rem;
     padding: 1.2rem 1rem 0;
     border-top: 1px solid var(--border);
     font-family: var(--font-ui);
-    font-size: 0.85rem;
     color: var(--muted);
 }
 
@@ -363,6 +364,7 @@ article a:hover, article a:visited:hover {
     align-items: baseline;
     gap: 0.6rem 1.5rem;
     flex-wrap: wrap;
+    font-size: 0.85rem;
 }
 
 .foot-name {
