@@ -366,6 +366,9 @@ footer a:hover {
         /* full-bleed: break out of .content's centered column */
         margin-left: calc(50% - 50vw);
         margin-right: calc(50% - 50vw);
+        /* pull up over main's 0.5em top padding + the header's 16px
+           margin-bottom so the indigo hero sits flush under the header */
+        margin-top: calc(-0.5em - 16px);
         padding: 2.5em 1.25em 1.5em;
     }
 
