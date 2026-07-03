@@ -18,4 +18,4 @@ Good reasons to write:
 - You want to talk about agent-native engineering: doing it, hiring for it, or scaling it.
 - Something on this site made you curious.
 
-I am also on [LinkedIn](https://www.linkedin.com/in/snevsky/) and [GitHub](https://github.com/dejital). If you need a resume, [here it is](/resume/).
+I am also on [LinkedIn](https://www.linkedin.com/in/snevsky/) and [GitHub](https://github.com/dejital). If you need a résumé, [here it is](/resume/).

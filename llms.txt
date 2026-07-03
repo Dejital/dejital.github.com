@@ -22,7 +22,7 @@ at Kansas City startups and enterprises.
 - [Blog](https://snevsky.com/blog/): essays on agent-native engineering and how I work
 - [Now](https://snevsky.com/now/): what I am up to right now
 - [Projects](https://snevsky.com/projects/): coding side projects
-- [Resume (PDF)](https://snevsky.com/resume/SergeNevskyResume.pdf)
+- [Résumé (PDF)](https://snevsky.com/resume/SergeNevskyResume.pdf)
 - [Contact](https://snevsky.com/contact/): talk to me about agent-native engineering
 
 ## Blog posts
