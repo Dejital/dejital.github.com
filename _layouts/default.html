@@ -18,8 +18,33 @@
         <link rel="manifest" href="/manifest.json">
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#3f51b5">
         <link rel="stylesheet" href="/assets/css/screen.css">
+        <script>
+          // Apply saved theme before first paint to avoid a flash.
+          (function () {
+            var t = localStorage.getItem('theme');
+            if (t) document.documentElement.setAttribute('data-theme', t);
+          })();
+        </script>
     </head>
     <body>
+        <button class="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle theme"></button>
+        <script>
+          (function () {
+            var btn = document.querySelector('.theme-toggle');
+            function current() {
+              return document.documentElement.getAttribute('data-theme') ||
+                (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            }
+            function paint() { btn.textContent = current() === 'dark' ? '☀' : '☾'; }
+            btn.addEventListener('click', function () {
+              var next = current() === 'dark' ? 'light' : 'dark';
+              document.documentElement.setAttribute('data-theme', next);
+              localStorage.setItem('theme', next);
+              paint();
+            });
+            paint();
+          })();
+        </script>
         <div id="top">
             <header>
                 <a href="/" id="left-header" class="nav-item side" style="text-align: left;">
