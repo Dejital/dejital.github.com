@@ -397,13 +397,21 @@ footer a:hover {
         content: "";
         position: absolute;
         inset: 0;
-        /* rgba fallback, then color-mix (tracks --hero-bg in dark mode) */
-        background: linear-gradient(90deg,
-            #3f51b5 0%, rgba(63, 81, 181, 0.74) 40%, rgba(63, 81, 181, 0.28) 100%);
-        background: linear-gradient(90deg,
-            var(--hero-bg) 0%,
-            color-mix(in srgb, var(--hero-bg) 74%, transparent) 40%,
-            color-mix(in srgb, var(--hero-bg) 28%, transparent) 100%);
+        /* horizontal wash + a subtle bottom fade so the portrait melts into
+           the hero background instead of ending abruptly at the next card.
+           rgba fallback, then color-mix (tracks --hero-bg in dark mode) */
+        background:
+            linear-gradient(180deg,
+                rgba(63, 81, 181, 0) 72%, #3f51b5 100%),
+            linear-gradient(90deg,
+                #3f51b5 0%, rgba(63, 81, 181, 0.74) 40%, rgba(63, 81, 181, 0.28) 100%);
+        background:
+            linear-gradient(180deg,
+                transparent 72%, var(--hero-bg) 100%),
+            linear-gradient(90deg,
+                var(--hero-bg) 0%,
+                color-mix(in srgb, var(--hero-bg) 74%, transparent) 40%,
+                color-mix(in srgb, var(--hero-bg) 28%, transparent) 100%);
     }
 }
 
