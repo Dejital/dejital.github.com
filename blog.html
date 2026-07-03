@@ -22,6 +22,7 @@ permalink: '/blog/'
   {% for post in site.posts %}
   <li class="post-on-index">
     <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p style="margin: 0px; font-size: smaller; color: var(--muted);">{{ post.date | date: '%B %Y' }}</p>
     <p style="margin: 0px;">{{ post.excerpt }}</p>
     <span style="font-size: smaller;"><a href="{{ post.url }}">Read More →</a></span>
   </li>

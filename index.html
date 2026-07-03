@@ -2,70 +2,118 @@
 layout: main
 ---
 <audio id="pronounce">
-  <source src="assets/name.mp3">
-  <source src="assets/name.ogg">
+  <source src="assets/name.mp3">
+  <source src="assets/name.ogg">
 </audio>
 
 <style type="text/css">
   body {
-    background: #3f51b5;
+    background: var(--hero-bg, #3f51b5);
     color: white;
   }
   header {
     display: none;
   }
   main, footer {
-    max-width: 850px;
-    padding: 0;
+    max-width: 960px;
+    padding: 0 1rem;
   }
-  @media (max-width: 1200px) {
-    main {
-      max-width: 600px;
-    }
+  /* Theme toggle on the indigo hero: frosted instead of solid surface. */
+  .theme-toggle {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.35);
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .theme-toggle:hover {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.7);
+  }
+  /* Quiet on the indigo hero too: muted white by default, full white on hover
+     (mirrors the muted -> text treatment in screen.css for light/dark). */
+  footer a, footer a:active, footer a:visited {
+    color: rgba(255, 255, 255, 0.65);
+  }
+  footer a:hover {
+    color: #fff;
+  }
+  /* screen.css's global link rules (main a:visited, main a:visited:hover)
+     out-specificity .heading a for visited/hovered states, going indigo
+     on this indigo hero — force white in every state, scoped to the homepage. */
+  .heading a, .heading a:link, .heading a:visited,
+  .heading a:hover, .heading a:visited:hover, .heading a:active {
+    color: #fff;
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+  }
+  /* Gold accents: the ♫ and the primary CTA underline (every state, so the
+     white override above can't clobber them). */
+  .heading strong a, .heading strong a:link, .heading strong a:visited,
+  .heading strong a:hover, .heading strong a:visited:hover {
+    color: #ffd54f;
+    border-bottom: none;
+  }
+  .heading .hero-cta, .heading .hero-cta:link, .heading .hero-cta:visited,
+  .heading .hero-cta:active {
+    border-bottom-color: #ffd54f;
+  }
+  .heading .hero-cta:hover, .heading .hero-cta:visited:hover {
+    border-bottom-color: #ffe58a;
+  }
+  /* Newsletter on the indigo hero: frosted input, gold button. */
+  .heading .mc-row input.email {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.4);
+    color: #fff;
+  }
+  .heading .mc-row input.email::placeholder {
+    color: rgba(255, 255, 255, 0.65);
+  }
+  .heading .mc-row input.email:focus {
+    border-color: #ffd54f;
+  }
+  .heading .mc-row .button {
+    background: #ffd54f;
+    color: #1a1c3a;
+  }
+  .heading .mc-row .button:hover {
+    background: #ffe58a;
   }
 </style>
 
 <div class="heading">
+<div class="hero-text">
+  <p class="hero-kicker">Kansas City <span class="dot">&middot;</span><br class="kicker-br"> Software engineer at Meta</p>
   <strong>
     Hello, my name is Serge Nevsky <a href="#" onclick="document.getElementById('pronounce').play()">&#9835;</a>
   </strong>
-  <p>
-    I am a software engineer from Kansas City.
-    <br />
-    I create experiences on the web.
-    <br />
-    Currently working at <i>Meta.</i>
+  <p class="hero-lede">
+    I run <em>fleets of AI&nbsp;agents</em> that ship production software.
+  </p>
+  <p class="hero-sub">
+    I built the orchestration system that multiplies how much I ship, and I
+    write about how it works.
   </p>
 
-<!-- Begin Mailchimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-	#mc_embed_signup{background:transparent; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-  #mc_embed_signup .button {
-    box-shadow: 0 1px 1px rgba(23,43,77,0.6),
-      0 0 0.5px 0 rgba(23,43,77,0.65);
-    font-size: 15px;
-    height: 38px;
-  }
-  #mc_embed_signup input.email {
-    font-size: 15px;
-    padding: 1.2em 1em;
-    box-shadow: 0 1px 1px rgba(23,43,77,0.6),
-      0 0 0.5px 0 rgba(23,43,77,0.65);
-  }
-</style>
-<div id="mc_embed_signup">
-<form action="https://snevsky.us7.list-manage.com/subscribe/post?u=b4c45bc7d83cfb9a04783878e&amp;id=b3c0dba86b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email address and follow updates" required>
+  <p class="hero-cta-row">
+    <a href="/blog/" class="hero-cta">Read the blog &rarr;</a>
+    <a href="/about/" class="hero-cta-quiet">About me</a>
+  </p>
+
+<form action="https://snevsky.us7.list-manage.com/subscribe/post?u=b4c45bc7d83cfb9a04783878e&amp;id=b3c0dba86b" method="post" class="mc-form" target="_blank" novalidate>
+  <div class="mc-row">
+    <input type="email" value="" name="EMAIL" class="email" placeholder="Get my essays on agent-native engineering" required>
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b4c45bc7d83cfb9a04783878e_b3c0dba86b" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
+    <input type="submit" value="Subscribe" name="subscribe" class="button">
+  </div>
 </form>
 </div>
+
+<figure class="hero-portrait">
+  <picture>
+    <source srcset="/assets/img/portrait-640.webp" type="image/webp">
+    <img src="/assets/img/portrait-640.jpg" alt="Serge Nevsky" width="640" height="853" fetchpriority="high">
+  </picture>
+</figure>
 
 </div>
 
@@ -73,74 +121,84 @@ layout: main
 
   <a href="/blog/">
     <div class="card">
-      <p><span>B</span> <strong>Blog</strong></p>
-      <p>Read some of the articles I've written.</p>
-      {% for post in site.posts limit:1 %}
-      <p><strong>Latest:</strong> {{ post.title }}</p>
-      {% endfor %}
+      <p><span class="em-indigo">B</span> <strong>Blog</strong></p>
+      <p>Essays on agent-native engineering and how I work.</p>
     </div>
   </a>
 
   <a href="/about/">
     <div class="card">
-      <p><span>A</span> <strong>About</strong></p>
+      <p><span class="em-violet">A</span> <strong>About</strong></p>
       <p>Learn more about me.</p>
     </div>
   </a>
 
   <a href="/projects/">
     <div class="card">
-      <p><span>P</span> <strong>Projects</strong></p>
+      <p><span class="em-blue">P</span> <strong>Projects</strong></p>
       <p>I enjoy working on coding side projects.</p>
     </div>
   </a>
 
   <a href="/resume/SergeNevskyResume.pdf">
     <div class="card">
-      <p><span>R</span> <strong>Resume</strong></p>
+      <p><span class="em-navy">R</span> <strong>Resume</strong></p>
       <p>Click to download my resume.</p>
-    </div>
-  </a>
-
-  <a href="http://films.snevsky.com/">
-    <div class="card">
-      <p><span>F</span> <strong>Films</strong></p>
-      <p>A list of every single film I've seen in the last decade.</p>
     </div>
   </a>
 
   <a href="/now/">
     <div class="card">
-      <p><span>N</span> <strong>Now</strong></p>
+      <p><span class="em-teal">N</span> <strong>Now</strong></p>
       <p>See what I'm up to <strong>now</strong>.</p>
     </div>
   </a>
 
-  <a href="mailto:serge@snevsky.com">
-    <div class="card">
-      <p><span>@</span> <strong>E-mail</strong></p>
-      <p>Drop me a line over e-mail</p>
-    </div>
-  </a>
+</div>
 
-  <a href="/photography/">
+<h2 class="act-divider">Off the clock</h2>
+
+<div class="card-layout">
+
+  <a href="https://snevsky.com/films/">
     <div class="card">
-      <p><span>P</span> <strong>Photography</strong></p>
-      <img src="assets/img/fire-sword.jpg">
+      <p><span class="em-purple">F</span> <strong>Films</strong></p>
+      <p>A list of every single film I've seen in the last decade.</p>
     </div>
   </a>
 
   <a href="/music/">
     <div class="card">
-      <p><span>M</span> <strong>Music</strong></p>
+      <p><span class="em-plum">M</span> <strong>Music</strong></p>
       <p>I record and produce my own songs.</p>
+    </div>
+  </a>
+
+  <a href="/photography/">
+    <div class="card">
+      <p><span class="em-sky">P</span> <strong>Photography</strong></p>
+      <p>Photos from my mirrorless camera.</p>
     </div>
   </a>
 
   <a href="/drawings/">
     <div class="card">
-      <p><span>D</span> <strong>Drawings</strong></p>
-      <img src="assets/img/classical-guitar.jpg">
+      <p><span class="em-cyan">D</span> <strong>Drawings</strong></p>
+      <p>Sketches and doodles over the years.</p>
+    </div>
+  </a>
+
+  <a href="/museum/">
+    <div class="card">
+      <p><span class="em-grape">M</span> <strong>Museum</strong></p>
+      <p>Websites I built starting at age seven, preserved.</p>
+    </div>
+  </a>
+
+  <a href="mailto:serge@snevsky.com">
+    <div class="card">
+      <p><span class="em-cobalt">@</span> <strong>E-mail</strong></p>
+      <p>Drop me a line over e-mail</p>
     </div>
   </a>
 

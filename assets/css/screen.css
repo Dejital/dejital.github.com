@@ -1,117 +1,665 @@
+/* ---------------------------------------------------------------------------
+   Self-hosted variable fonts (latin subsets, ~370KB total)
+--------------------------------------------------------------------------- */
+@font-face {
+    font-family: 'Newsreader';
+    font-style: normal;
+    font-weight: 300 700;
+    font-display: swap;
+    src: url('/assets/fonts/newsreader-var.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Newsreader';
+    font-style: italic;
+    font-weight: 300 700;
+    font-display: swap;
+    src: url('/assets/fonts/newsreader-italic-var.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('/assets/fonts/inter-var.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 100 800;
+    font-display: swap;
+    src: url('/assets/fonts/jetbrains-mono-var.woff2') format('woff2');
+}
+
+/* ---------------------------------------------------------------------------
+   Design tokens — light is white/indigo, dark is a deep indigo surface.
+--------------------------------------------------------------------------- */
+:root {
+    --font-ui: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-serif: 'Newsreader', Charter, "Bitstream Charter", "Iowan Old Style", Georgia, serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    --gold: #ffd54f;
+
+    --bg: #ffffff;
+    --surface: #ffffff;
+    --text: #2a2d3e;
+    --muted: #5f6377;
+    --accent: #3f51b5;
+    --accent-hover: #303f9f;
+    --link: #3f51b5;
+    --link-hover: #303f9f;
+    --hero-bg: #3f51b5;
+    --border: #c6c8d4;
+    --card-border: rgba(23, 43, 77, 0.12);
+    --card-shadow: 0 1px 2px rgba(23, 43, 77, 0.25), 0 0 1px rgba(23, 43, 77, 0.35);
+    --card-shadow-hover: 0 6px 16px rgba(23, 43, 77, 0.28), 0 0 1px rgba(23, 43, 77, 0.35);
+}
+
+:root[data-theme="dark"] {
+    --bg: #12142e;
+    --surface: #1c1f42;
+    --text: #e4e6f4;
+    --muted: #a6abcc;
+    --accent: #5c6bc0;
+    --accent-hover: #4a57a9;
+    --link: #9fa8da;
+    --link-hover: #c5cae9;
+    --hero-bg: #12142e;
+    --border: #4a4f77;
+    --card-border: rgba(159, 168, 218, 0.18);
+    --card-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    --card-shadow-hover: 0 8px 20px rgba(0, 0, 0, 0.55), 0 0 1px rgba(0, 0, 0, 0.6);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        --bg: #12142e;
+        --surface: #1c1f42;
+        --text: #e4e6f4;
+        --muted: #a6abcc;
+        --accent: #5c6bc0;
+        --accent-hover: #4a57a9;
+        --link: #9fa8da;
+        --link-hover: #c5cae9;
+        --hero-bg: #12142e;
+        --border: #4a4f77;
+        --card-border: rgba(159, 168, 218, 0.18);
+        --card-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+        --card-shadow-hover: 0 8px 20px rgba(0, 0, 0, 0.55), 0 0 1px rgba(0, 0, 0, 0.6);
+    }
+}
+
+/* ---------------------------------------------------------------------------
+   Theme toggle — fixed top-right, quiet
+--------------------------------------------------------------------------- */
+.theme-toggle {
+    position: fixed;
+    top: 0.9rem;
+    right: 0.9rem;
+    z-index: 50;
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--muted);
+    font-size: 1.05rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.theme-toggle:hover {
+    color: var(--text);
+    border-color: var(--muted);
+}
+
+/* ---------------------------------------------------------------------------
+   Base
+--------------------------------------------------------------------------- */
 body {
-    color: #444;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 20px;
+    margin: 0;
+    color: var(--text);
+    background: var(--bg);
+    font-family: var(--font-ui);
+    font-size: clamp(1.05rem, 1rem + 0.35vw, 1.2rem);
     line-height: 1.5;
-    background: #fff;
 }
 
-.content {
-    margin: 0 auto;
+::selection {
+    background: var(--accent);
+    color: #fff;
 }
 
-.main-header {
-    text-align: right; 
+:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
 }
 
-.breadcrumb-header {
-    font-size: 24pt;
+h1, h2, h3 {
+    line-height: 1.25;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 1.2em;
+}
+
+hr {
+    border: 0;
+    border-top: 1px dotted var(--border);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---------------------------------------------------------------------------
+   Header / nav
+--------------------------------------------------------------------------- */
+header {
+    display: flex;
+    text-transform: uppercase;
     font-weight: bold;
+    font-size: medium;
+    margin-bottom: 1em;
+    background: #3f51b5;
+    padding: 0;
 }
 
-.breadcrumb-header a {
-    color: #444;
+header a, header a:visited, header a:hover, header a:active {
     text-decoration: none;
+    color: white;
 }
 
-.breadcrumb-header a:hover {
-    color: #2288ee;
+#blog-header, #blog-left-header {
+    display: none;
 }
 
-.breadcrumb-header a:active {
-    color: #004d9a;
+.nav-item {
+    flex: 1;
+    padding: 1em;
+    text-align: center;
 }
 
-nav {
-    font-size: small;
+a.nav-item:hover {
+    transition: background-color 0.5s ease-in;
+    background: #37469c;
 }
 
-.next {
-    text-align: right;
+.nav-item.side {
+    text-align: left;
+    text-transform: none;
+}
+
+/* On phones, equal flex thirds squeeze the center title into one word per
+   line; let side items shrink to content so the title stays on one line. */
+@media (max-width: 760px) {
+    .nav-item {
+        white-space: nowrap;
+        padding: 1em 0.6em;
+    }
+
+    .nav-item.side {
+        flex: 0 0 auto;
+    }
+}
+
+/* ---------------------------------------------------------------------------
+   Layout & measure — post body reads at ~65ch, code can run wider.
+--------------------------------------------------------------------------- */
+.content {
+    max-width: 52rem;
+    margin: 0 auto;
+    padding: 0.5em 1em;
 }
 
 main, footer {
-    max-width: 450px;
+    max-width: 65ch;
     margin: 0 auto;
-    padding: 0.5em 2em;
+    padding: 0.5em 1em;
+}
+
+footer, nav,
+article h2, article h3, article p,
+article ul, article ol, article blockquote,
+article .article-header-img {
+    max-width: 65ch;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 article {
     padding-top: 0.5em;
+    font-family: var(--font-ui);
+    font-size: clamp(1.05rem, 1rem + 0.3vw, 1.2rem);
+    line-height: 1.65;
+    letter-spacing: 0.002em;
+}
+
+article pre {
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.8em;
+    overflow-x: auto;
+}
+
+article img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+aside > img {
+    margin: 1em auto;
 }
 
 footer {
     margin-bottom: 2em;
 }
 
-main a, main a:visited {
-    border-bottom: 1px dotted #c0c0c0;
-    color: #0066cc;
-    text-decoration: none;
-}
-
-main a:hover, main a:visited:hover {
-    border-bottom-color: #2288ee;
-    color: #2288ee;
-}
-
-main a:active, main a:visited:active {
-    border-bottom-color: #004d9a;
-    color: #004d9a;
-}
-
-article a, article a:visited {
-    border-bottom: 1px dotted #c0c0c0;
-    color: #444;
-    text-decoration: none;
-}
-
-article a:hover, article a:visited:hover {
-    border-bottom-color: #2288ee;
-    color: #2288ee;
-}
-
-article a:active, article a:visited:active {
-    border-bottom-color: #004d9a;
-    color: #004d9a;
-}
-
-#meta { 
-    color: #999;
+nav {
     font-size: small;
+    font-family: var(--font-ui);
+}
+
+.next {
+    text-align: right;
+}
+
+/* ---------------------------------------------------------------------------
+   Links
+--------------------------------------------------------------------------- */
+main a, main a:visited,
+article a, article a:visited {
+    border-bottom: 1px dotted var(--border);
+    color: var(--link);
+    text-decoration: none;
+}
+
+main a:hover, main a:visited:hover,
+article a:hover, article a:visited:hover {
+    border-bottom-color: var(--link-hover);
+    color: var(--link-hover);
+}
+
+#meta {
+    color: var(--muted);
+    font-size: small;
+    font-family: var(--font-ui);
 }
 
 footer a, footer a:active, footer a:visited {
-    color: #3f51b5;
+    display: inline-block;
+    color: var(--muted);
     text-decoration: none;
-    font-weight: bold;
+    font-weight: normal;
     border: none;
-    font-size: 34px;
+    font-size: 20px;
+    line-height: 1;
+    padding: 12px 16px; /* keeps tap target ~44px even though the glyph shrank */
+    transition: color 0.15s ease;
 }
 
 footer a:hover {
-    color: #444;
+    color: var(--text);
 }
 
-h1, h2, h3 {
-    line-height: initial;
+/* ---------------------------------------------------------------------------
+   Formerly Pure CSS — the only classes this site actually used.
+--------------------------------------------------------------------------- */
+.pure-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-ul {
-    list-style-type: square;
-    padding-left: 1em;
+.pure-button, .pure-button:visited {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.35em;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--font-ui);
+    font-size: 0.9rem;
 }
 
+.pure-button:hover {
+    background: var(--accent-hover);
+    color: #fff;
+}
+
+.post-nav-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2em;
+}
+
+/* ---------------------------------------------------------------------------
+   Hero (homepage)
+--------------------------------------------------------------------------- */
+.heading {
+    color: white;
+    text-align: left;
+    padding: 3em 0 1em;
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 3rem;
+    align-items: center;
+}
+
+.hero-portrait {
+    margin: 0;
+}
+
+.hero-portrait img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.3);
+}
+
+/* mobile-only line break in the kicker (re-enabled in the 760px media query,
+   which must come after this rule in source order) */
+.kicker-br {
+    display: none;
+}
+
+/* On small screens the portrait becomes a right-side background with an
+   indigo wash, and the hero text reads over it. */
+@media (max-width: 760px) {
+    .heading {
+        grid-template-columns: 1fr;
+        gap: 0;
+        position: relative;
+        overflow: hidden;
+        border-radius: 0;
+        /* full-bleed: break out of .content's centered column */
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+        /* pull up over main's 0.5em top padding + the header's 16px
+           margin-bottom so the indigo hero sits flush under the header */
+        margin-top: calc(-0.5em - 16px);
+        padding: 2.5em 1.25em 1.5em;
+    }
+
+    .hero-text {
+        position: relative;
+        z-index: 1;
+    }
+
+    /* kicker breaks onto two lines; the dot separator makes no sense stacked */
+    .kicker-br {
+        display: inline;
+    }
+
+    .hero-kicker .dot {
+        display: none;
+    }
+
+    .hero-portrait {
+        position: absolute;
+        /* right edge hangs 12% past the viewport (hero clips it) so the
+           face sits right of the heading text; tune the -12% to taste */
+        inset: 0 -12% 0 32%;
+        margin: 0;
+        z-index: 0;
+    }
+
+    .hero-portrait img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top right;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .hero-portrait::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        /* horizontal wash + a subtle bottom fade so the portrait melts into
+           the hero background instead of ending abruptly at the next card.
+           rgba fallback, then color-mix (tracks --hero-bg in dark mode) */
+        background:
+            linear-gradient(180deg,
+                rgba(63, 81, 181, 0) 72%, #3f51b5 100%),
+            linear-gradient(90deg,
+                #3f51b5 0%, rgba(63, 81, 181, 0.74) 40%, rgba(63, 81, 181, 0.28) 100%);
+        background:
+            linear-gradient(180deg,
+                transparent 72%, var(--hero-bg) 100%),
+            linear-gradient(90deg,
+                var(--hero-bg) 0%,
+                color-mix(in srgb, var(--hero-bg) 74%, transparent) 40%,
+                color-mix(in srgb, var(--hero-bg) 28%, transparent) 100%);
+    }
+}
+
+.hero-kicker {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.65);
+    margin: 0 0 2.4em;
+}
+
+.hero-kicker .dot {
+    color: var(--gold);
+}
+
+.heading strong {
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.heading a {
+    color: #fff;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+.heading a:hover {
+    border-bottom-color: #fff;
+}
+
+.hero-lede {
+    font-family: var(--font-serif);
+    font-variation-settings: 'opsz' 72;
+    font-size: clamp(2.2rem, 1.4rem + 3.4vw, 3.8rem);
+    font-weight: 400;
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    margin: 0.35em 0 0.45em;
+    max-width: 18ch;
+}
+
+.hero-lede em {
+    font-style: italic;
+    font-weight: 340;
+}
+
+.hero-sub {
+    font-family: var(--font-ui);
+    font-size: clamp(1rem, 0.95rem + 0.3vw, 1.15rem);
+    line-height: 1.6;
+    opacity: 0.85;
+    max-width: 46ch;
+    margin: 0 0 1.8em;
+}
+
+.hero-cta-row {
+    display: flex;
+    gap: 2rem;
+    align-items: baseline;
+    margin: 0 0 1em;
+    font-family: var(--font-ui);
+}
+
+.hero-cta {
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+.hero-cta-quiet {
+    opacity: 0.75;
+    font-weight: 400;
+}
+
+/* ---------------------------------------------------------------------------
+   Newsletter form (Mailchimp endpoint, our styling — no CDN CSS)
+--------------------------------------------------------------------------- */
+.mc-form {
+    max-width: 30rem;
+}
+
+.mc-label {
+    display: block;
+    font-family: var(--font-ui);
+    font-size: 0.92rem;
+    color: var(--muted);
+    margin-bottom: 0.6em;
+}
+
+.mc-row {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.mc-row input.email {
+    flex: 1 1 14rem;
+    padding: 0.7em 0.9em;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    font-family: var(--font-ui);
+    font-size: 0.95rem;
+}
+
+.mc-row input.email:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.mc-row .button {
+    padding: 0.7em 1.3em;
+    border-radius: 6px;
+    border: none;
+    background: var(--accent);
+    color: #fff;
+    font-family: var(--font-ui);
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.mc-row .button:hover {
+    background: var(--accent-hover);
+}
+
+/* ---------------------------------------------------------------------------
+   Card grid — two acts, deliberate order, per-card emblem accents.
+--------------------------------------------------------------------------- */
+.card-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+.card-layout a {
+    border: none;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+}
+
+.card {
+    background: var(--surface);
+    color: var(--text);
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    border: 1px solid var(--card-border);
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+    line-height: 1.5;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+}
+
+.card p {
+    margin: 1em;
+    line-height: 1.5;
+}
+
+.card span {
+    display: inline-block;
+    padding: 0.35em 0.6em;
+    border-radius: 0.3em;
+    background: var(--em, var(--accent));
+    margin-right: 0.4em;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Emblem accents — analogous hues around the indigo brand; all hold
+   >= 4.5:1 contrast with white text in light and dark mode. */
+.em-indigo  { --em: #3f51b5; }
+.em-violet  { --em: #5e35b1; }
+.em-blue    { --em: #1565c0; }
+.em-navy    { --em: #283593; }
+.em-teal    { --em: #00695c; }
+.em-purple  { --em: #7b1fa2; }
+.em-plum    { --em: #512da8; }
+.em-sky     { --em: #0277bd; }
+.em-cyan    { --em: #00838f; }
+.em-grape   { --em: #4527a0; }
+.em-cobalt  { --em: #303f9f; }
+
+.act-divider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2.5rem 0 1.5rem;
+    font-family: var(--font-ui);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.act-divider::before,
+.act-divider::after {
+    content: "";
+    flex: 1;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* ---------------------------------------------------------------------------
+   Projects page
+--------------------------------------------------------------------------- */
 .project {
     margin: 2em 0;
 }
@@ -124,205 +672,75 @@ ul {
     margin: 0.3em 0 0 0;
 }
 
-aside > img {
-    margin: 1em auto;
-}
-
-@keyframes bottomFadeIn {
-  0% {
-    opacity: 0;
-  }
-  40% {
-    transform: translateY(1em);
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-.card-layout { 
-    column-count: 2;
-    column-gap: 0;
-    margin: 0 auto;
-
-    animation-name: bottomFadeIn;
-    animation-delay: 0s;
-    animation-duration: 2s;
-}
-
-.card-layout a {
-    border: none;
-    text-decoration: none;
-}
-
-.card {
-    background: #fff;
-    color: #444;
-    padding: 0;
-    border-radius: 0.2em;
-    box-shadow: 0 1px 1px rgba(23,43,77,0.6), 0 0 0.5px 0 rgba(23,43,77,0.65);
-    width: 400px;
-    line-height: 1.5;
-    margin: 0.5em;
-    display: inline-block;
-    vertical-align: top;
-    line-height: 0;
-
-    transform: translateZ(0);
-
-    break-inside: avoid;
-    
-    -webkit-transition-duration: 0.1s;
-    -moz-transition-duration: 0.1s;
-    -o-transition-duration: 0.1s;
-    transition-duration: 0.1s;
-}
-
-.card img {
-    width: 100%;
-}
-
-.card p {
-    margin: 1em;
-    line-height: 1.5;
-}
-
-.card:hover {
-    box-shadow: 0 3px 1px rgba(23,43,77,0.6), 0 0 0.5px 0 rgba(23,43,77,0.65);
-    
-    -webkit-transform: translateY(-.25rem);
-    transform: translateY(-.25rem);
-    z-index: 2;
-}
-
-.card span {
-    padding: 0.5em 0.7em;
-    background: cadetblue;
-    margin-right: 0.4em;
-    color: white;
-    font-size: small;
-}
-
-.heading {
-    color: white;
-    text-align: center;
-    padding: 2em 0;
-    margin-top: 2em;
-
-    animation-name: fadeIn;
-    animation-delay: 0;
-    animation-duration: 1s;
-}
-
-.heading #mc_embed_signup {
-    opacity: 0;
-    animation-fill-mode: forwards;
-    animation-name: fadeIn;
-    animation-delay: 1.5s;
-    animation-duration: 1s;
-}
-
-.heading strong { 
-    font-size: larger;
-}
-
-main .heading a {
-    color: #c0c0c0;
-    border-bottom: 2px solid #c0c0c0;
-}
-
-header {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: medium;
-    margin-bottom: 1em;
-    background: #3f51b5;
-    padding: 0;
-    
-    -webkit-transition-duration: 0.1s;
-    -moz-transition-duration: 0.1s;
-    -o-transition-duration: 0.1s;
-    transition-duration: 0.1s;
-}
-
-header a, header a:visited, header a:hover, header a:active {
-    text-decoration: none;
-    color: white;
-}
-
-#blog-header, #comments-header, #blog-left-header {
-    display: none;
-}
-
-header {
-    display: flex;
-}
-
-.nav-item {
-    flex: 1;
-    padding: 1em;
-    text-align: center;
-}
-
-a.nav-item:hover { 
-    transition: background-color 0.5s ease-in;
-    background: #37469c;
-}
-
-.nav-item.side {
-    text-align: left;
-    text-transform: none;
-}
-
-@media (max-width: 1200px) {
-    .card {
-        width: 278px;
-    }
-}
-
-@media (max-width: 700px) {
-    .card-layout { 
-        max-width: 400px;
-        column-count: inherit;
-    }
-    .card {
-        padding: 0;
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
-    }
-    header {
-        font-size: large;
-    }
-    .nav-item.side {
-        display: none !important;
-    }
-}
-
+/* ---------------------------------------------------------------------------
+   Newsletter (Mailchimp) buttons — indigo everywhere; inverted on the
+   indigo hero so the button stays visible.
+--------------------------------------------------------------------------- */
 #mc-embedded-subscribe {
-  background-color: #569ea0 !important;
+    background-color: var(--accent) !important;
+    color: #fff !important;
 }
 #mc-embedded-subscribe:hover {
-  background-color: #444 !important;
+    background-color: var(--accent-hover) !important;
+}
+.heading #mc-embedded-subscribe {
+    background-color: #fff !important;
+    color: #3f51b5 !important;
+}
+.heading #mc-embedded-subscribe:hover {
+    background-color: #e8eaf6 !important;
 }
 
 @media (max-width: 768px) {
-  #mce-EMAIL {
-      width: 350px !important;
-  }
-  #mc_embed_signup_scroll > div.clear {
-      display: inline-block !important;
-      width: unset !important;
-  }
+    #mce-EMAIL {
+        width: 350px !important;
+    }
+    #mc_embed_signup_scroll > div.clear {
+        display: inline-block !important;
+        width: unset !important;
+    }
 }
-hr {
-    border: 0;
-    border-top: 1px dotted lightgray;
+
+/* ---------------------------------------------------------------------------
+   Motion — entrance fades and hover lift only when motion is welcome.
+--------------------------------------------------------------------------- */
+@keyframes bottomFadeIn {
+    0% { opacity: 0; }
+    40% { transform: translateY(1em); opacity: 0; }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .card-layout {
+        animation: bottomFadeIn 2s;
+    }
+
+    .heading {
+        animation: fadeIn 1s;
+    }
+
+    .heading #mc_embed_signup {
+        opacity: 0;
+        animation: fadeIn 1s 1.5s forwards;
+    }
+
+    .card {
+        transition: box-shadow 0.15s ease, transform 0.15s ease;
+    }
+
+    .card:hover {
+        box-shadow: var(--card-shadow-hover);
+        transform: translateY(-0.25rem);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card:hover {
+        box-shadow: var(--card-shadow-hover);
+    }
 }

@@ -8,34 +8,38 @@ permalink: '/about/'
 
 ## About
 
-I am a software engineer from Kansas City. 
-I'm [currently working at Meta](http://linkedin.snevsky.com) 
+I am a software engineer from Kansas City, [currently at Meta](https://www.linkedin.com/in/snevsky/)
+working on the Instagram and Facebook apps, and on the more interesting
+problem of how engineers should work now that AI agents can do real
+engineering.
 
-I was born in Russia and moved to Kansas City as a child. I began
-making websites at age seven for myself, ranging from artwork to 
-webcomics to games, and hosting them on Geocities. I took an interest in
-user experience, web design and graphics.
+I was born in Russia and moved to Kansas City as a child. I began making
+websites at age seven for myself, ranging from artwork to webcomics to games,
+and hosting them on Geocities. In college I studied Mathematics, French and
+Philosophy, and lived in the terminal: essays in `LaTeX`, email in `mutt`,
+schoolwork in `git`.
 
-In college I studied Mathematics, French and Philosophy. 
-In that time I gained a love for `unix` and spent the
-majority of my time in the terminal, writing essays in `LaTeX`, emails
-in `mutt` and maintaining schoolwork with `git`.
+I spent my early career across Kansas City startups and enterprises, leading
+teams, designing distributed systems, and teaching: I built an all-day
+distributed systems course that became required training for every engineering
+level at my company. In 2021 I joined Meta.
 
-In my career I worked in both small startups and large companies in Kansas City.
-Now I work remotely for Meta on the Instagram and Facebook apps.
+Then agents changed everything. I went all-in and built my own agent factory:
+a harness that manages the whole development lifecycle (**idea**,
+**research**, **plan**, **implement**, **deploy**) with a fleet of AI agents
+doing the heavy lifting at every phase. The result: I ship multiples of what
+I used to, across Facebook, Instagram, Messenger and internal tools on web
+and mobile.
 
-I enjoy working at a fast pace, on a small team, and in full stack development. 
-I am passionate about building high quality products with great user
-experiences.
+I help lead agent adoption across my org, and I
+[write](/blog/) about agent-native engineering. The
+best part of my job is the automation itself: every piece of busywork I hand
+to the fleet buys back time for the creative work of building products people
+love.
 
-I subscribe to the [Manifesto for Agile Software
-Development](http://agilemanifesto.org/), Clean Code, YAGNI and SOLID
-design principles. I favor custom solutions over common patterns and 
-practices.
-
-In my free time I like to work on side projects, play stringed
-instruments, snap photographs and spend time with my
-wife, daughter, family and friends.
+In my free time I play piano and stringed instruments, write and record
+[music](/music/), snap [photographs](/photography/), and spend time with my
+wife, kids, family and friends.
 
 See my [résumé](https://snevsky.com/resume/SergeNevskyResume.pdf).
 Also, see what I'm up to [now](/now/).
@@ -45,12 +49,12 @@ Also, see what I'm up to [now](/now/).
 Follow and connect with me on these networks:
 
 <ul style="column-count: 2; column-gap: 2em;">
-  <li><a href="http://linkedin.snevsky.com">LinkedIn</a></li>
-  <li><a href="http://instagram.snevsky.com">Instagram</a></li>
-  <li><a href="http://facebook.snevsky.com">Facebook</a></li>
-  <li><a href="http://twitter.snevsky.com">Twitter</a></li>
-  <li><a href="http://github.snevsky.com">Github</a></li>
-  <li><a href="http://lastfm.snevsky.com">Last.fm</a></li>
-  <li><a href="http://flickr.snevsky.com">Flickr</a></li>
+  <li><a href="https://www.linkedin.com/in/snevsky/">LinkedIn</a></li>
+  <li><a href="https://www.instagram.com/sergorgeous/">Instagram</a></li>
+  <li><a href="https://www.facebook.com/serge.nevsky">Facebook</a></li>
+  <li><a href="https://twitter.com/sergenevsky">Twitter</a></li>
+  <li><a href="https://github.com/dejital">GitHub</a></li>
+  <li><a href="https://www.last.fm/user/dejital">Last.fm</a></li>
+  <li><a href="https://www.flickr.com/photos/sergeyk/">Flickr</a></li>
   <li><a href="mailto:serge@snevsky.com">E-mail</a></li>
 </ul>

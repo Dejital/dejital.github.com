@@ -1,5 +1,6 @@
 {
-    "name": "",
+    "name": "Serge Nevsky",
+    "short_name": "Serge Nevsky",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -12,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
+    "theme_color": "#3f51b5",
     "background_color": "#ffffff",
     "display": "standalone"
 }

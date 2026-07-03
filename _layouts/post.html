@@ -2,12 +2,6 @@
 layout: blog
 ---
 <style>
-    #empty-side-header {
-      display: none;
-    }
-    #comments-header {
-      display: block;
-    }
     #left-header {
       display: none;
     }
@@ -17,7 +11,7 @@ layout: blog
 </style>
 
 <article>
-  {% if page.image }%}
+  {% if page.image %}
   <img src="{{ page.image }}" alt="{{ page.title }}" class="article-header-img pure-img">
   {% endif %}
 
@@ -30,20 +24,20 @@ layout: blog
 </article>
 
 <nav>
-  <div class="pure-g" style="margin-bottom: 2em;">
-    <div class="previous pure-u-1-2">
+  <div class="post-nav-row">
+    <div class="previous">
       {% if page.previous.url %}
         <a class="pure-button" href="{{page.previous.url}}">&#8592; Previous</a>
       {% endif %}
     </div>
 
-    <div class="next pure-u-1-2">
+    <div class="next">
       {% if page.next.url %}
         <a class="pure-button" href="{{page.next.url}}">Next &#8594;</a>
       {% endif %}
     </div>
   </div>
-
-  {% include comments.html %}
 </nav>
+
+{% include newsletter.html %}
 
