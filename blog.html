@@ -1,35 +1,19 @@
 ---
-layout: blog
-title: Blog
+layout: main
+title: Essays
+kicker: Writing
+sub: Agent-native engineering, and everything I wrote on the way here.
 permalink: '/blog/'
 ---
 
-<style type="text/css">
-  .post-on-index p, .post-on-index h3 {
-      margin: 0.5em 0;
-  }
-  main ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  .post-on-index {
-    margin: 1.5em 0;
-  }
-</style>
-
-<main>
-  <ul>
+<div class="post-list">
   {% for post in site.posts %}
-  <li class="post-on-index">
-    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-    <p style="margin: 0px; font-size: smaller; color: var(--muted);">{{ post.date | date: '%B %Y' }}</p>
-    <p style="margin: 0px;">{{ post.excerpt }}</p>
-    <span style="font-size: smaller;"><a href="{{ post.url }}">Read More →</a></span>
-  </li>
-      <hr>
+  <a class="post-row" href="{{ post.url }}">
+    <span class="post-row-date">{{ post.date | date: '%Y · %b' }}</span>
+    <span class="post-row-title">{{ post.title }}</span>
+    <span class="post-row-excerpt">{{ post.excerpt | strip_html | normalize_whitespace | truncate: 150 }}</span>
+  </a>
   {% endfor %}
-  </ul>
-
-</main>
+</div>
 
 {% include newsletter.html %}

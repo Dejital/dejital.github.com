@@ -1,26 +1,14 @@
 ---
-layout: blog
+layout: default
 ---
-<style>
-    #left-header {
-      display: none;
-    }
-    #blog-left-header {
-      display: block;
-    }
-</style>
+<div class="content">
 
 <article>
   {% if page.image %}
   <img src="{{ page.image }}" alt="{{ page.title }}" class="article-header-img pure-img">
   {% endif %}
 
-  <h2>{{ page.title }}</h2>
   {{ content }}
-
-  <p id="meta">
-    Published on {{ page.date | date: '%B %d, %Y' }} by <a href="/blog">Serge Nevsky</a>.
-  </p>
 </article>
 
 <nav>
@@ -41,3 +29,4 @@ layout: blog
 
 {% include newsletter.html %}
 
+</div>

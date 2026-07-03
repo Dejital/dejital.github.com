@@ -1,10 +1,11 @@
 ---
 layout: main
 title: Museum
+kicker: Off the clock
+kicker2: Internet archaeology
 permalink: '/museum/'
+body_class: gallery-dark
 ---
-
-## Museum
 
 I built many small websites as a little kid, hosted across Geocities, Angelfire and Tripod. 
 Unfortunately most of these are lost to time, but some are preserved here in the Museum.
