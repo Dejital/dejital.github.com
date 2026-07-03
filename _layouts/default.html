@@ -22,7 +22,7 @@
           })();
         </script>
     </head>
-    <body>
+    <body class="{{ page.body_class }}">
         <button class="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle theme"></button>
         <script>
           (function () {
@@ -42,29 +42,43 @@
           })();
         </script>
         <div id="top">
-            <header>
-                <a href="/" id="left-header" class="nav-item side" style="text-align: left;">
-                    ←  Home
-                </a>
-              <a href="/blog" id="blog-left-header" class="nav-item side" style="text-align: left;">
-                ←  Home
-              </a>
-              <a href="/" id="site-header" class="nav-item">
-                <span>
-                  Serge Nevsky
-                </span>
-              </a>
-              <a href="/blog/" id="blog-header" class="nav-item">
-                <span>
-                  Serge Nevsky / Blog
-                </span>
-              </a>
-              <div class="nav-item side" id="empty-side-header">
+            {% if page.title %}
+            <div class="page-hero">
+              <div class="page-hero-inner">
+                <nav class="band-nav">
+                  <a class="band-name" href="/">Serge Nevsky</a>
+                  <div class="band-links">
+                    <a href="/blog/"{% if page.url contains 'blog' %} class="here"{% endif %}>Blog</a>
+                    <a href="/about/"{% if page.url == '/about/' %} class="here"{% endif %}>About</a>
+                    <a href="/now/"{% if page.url == '/now/' %} class="here"{% endif %}>Now</a>
+                    <a href="/#off-the-clock"{% if page.body_class contains 'gallery' %} class="here"{% endif %}>More</a>
+                  </div>
+                </nav>
+                {% if page.kicker %}
+                <p class="band-kicker">{{ page.kicker }}{% if page.kicker2 %} <span class="dot">&middot;</span> {{ page.kicker2 }}{% endif %}</p>
+                {% endif %}
+                <h1 class="band-title">{{ page.title }}</h1>
+                {% if page.sub %}<p class="band-sub">{{ page.sub }}</p>{% endif %}
+                {% if page.date %}
+                {% assign mins = content | number_of_words | divided_by: 180 %}
+                <p class="band-meta">{{ page.date | date: '%B %-d, %Y' }}{% if mins > 2 %} &ensp;&middot;&ensp; {{ mins }} min read{% endif %}</p>
+                {% endif %}
               </div>
-            </header>
+            </div>
+            {% endif %}
             {{content}}
-            <footer>
-                <a href="#top">&uarr;</a>
+            <footer class="site-footer">
+                <div class="foot-row">
+                    <span class="foot-name">Serge Nevsky</span>
+                    <nav class="foot-soc">
+                        <a href="https://github.com/dejital">GitHub</a>
+                        <a href="https://www.linkedin.com/in/snevsky/">LinkedIn</a>
+                        <a href="https://twitter.com/sergenevsky">X</a>
+                        <a href="/feed.xml">RSS</a>
+                        <a href="#top">&uarr; Top</a>
+                    </nav>
+                </div>
+                <p class="foot-note">Views my own; not speaking for Meta.</p>
             </footer>
         </div>
     </body>

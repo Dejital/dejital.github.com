@@ -1,12 +1,11 @@
 ---
 layout: main
 title: About
+kicker: The story so far
 permalink: '/about/'
 ---
 
 <img src="/assets/img/serge-nevsky-late-night.jpg" alt="Serge Nevsky in Kansas City" class="pure-img">
-
-## About
 
 I am a software engineer from Kansas City, [currently at Meta](https://www.linkedin.com/in/snevsky/)
 working on the Instagram and Facebook apps, and on the more interesting
