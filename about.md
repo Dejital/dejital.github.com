@@ -27,9 +27,9 @@ level at my company. In 2021 I joined Meta.
 Then agents changed everything. I went all-in and built my own agent factory:
 a harness that manages the whole development lifecycle (**idea**,
 **research**, **plan**, **implement**, **deploy**) with a fleet of AI agents
-doing the heavy lifting at every phase. The result: I ship multiples of what
-I used to, across Facebook, Instagram, Messenger and internal tools on web
-and mobile.
+doing the heavy lifting at every phase. The result: one of the most productive
+engineers at Meta, shipping across Facebook, Instagram, Messenger and internal
+tools on web and mobile.
 
 I serve as an Agent Captain in my org, leading agent adoption across
 the organization, and I [write](/blog/) about agent-native engineering. The
