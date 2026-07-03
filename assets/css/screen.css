@@ -192,6 +192,19 @@ a.nav-item:hover {
     text-transform: none;
 }
 
+/* On phones, equal flex thirds squeeze the center title into one word per
+   line; let side items shrink to content so the title stays on one line. */
+@media (max-width: 760px) {
+    .nav-item {
+        white-space: nowrap;
+        padding: 1em 0.6em;
+    }
+
+    .nav-item.side {
+        flex: 0 0 auto;
+    }
+}
+
 /* ---------------------------------------------------------------------------
    Layout & measure — post body reads at ~65ch, code can run wider.
 --------------------------------------------------------------------------- */
