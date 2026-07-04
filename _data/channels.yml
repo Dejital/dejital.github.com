@@ -3,7 +3,7 @@
   items:
     - name: Geoffrey Huntley
       url: https://www.youtube.com/@GeoffreyHuntley
-      note: Agentic coding — pushing coding agents to do real engineering.
+      note: Agentic coding, pushing coding agents to do real engineering.
     - name: Unsupervised Learning
       url: https://www.youtube.com/@unsupervised-learning
       note: Agents, and the philosophy of where all this is heading.
@@ -20,7 +20,7 @@
       note: Jazz, and the young musicians he mentors.
     - name: Emmet Cohen
       url: https://www.youtube.com/@EmmetCohen
-      note: Jazz piano — the "Live from Emmet's Place" sessions.
+      note: Jazz piano from the "Live from Emmet's Place" sessions.
 - label: Health &amp; longevity
   items:
     - name: Siim Land
