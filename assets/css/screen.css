@@ -902,10 +902,12 @@ article a:hover, article a:visited:hover {
 }
 
 /* ---------------------------------------------------------------------------
-   Galleries — off-the-clock pages run dark in both themes so the work pops.
-   body.gallery-dark pins the dark palette; body.wide widens the column.
+   Galleries — off-the-clock pages default to dark so the work pops, but honor
+   an explicit theme choice. The dark palette applies only when the user hasn't
+   toggled (no data-theme on <html>); once they toggle, body inherits :root's
+   light/dark tokens. body.wide widens the column.
 --------------------------------------------------------------------------- */
-body.gallery-dark {
+:root:not([data-theme]) body.gallery-dark {
     --bg: #12142e;
     --surface: #1c1f42;
     --text: #e4e6f4;
@@ -917,11 +919,6 @@ body.gallery-dark {
     --hero-bg: #12142e;
     --border: #4a4f77;
     --card-border: rgba(159, 168, 218, 0.18);
-}
-
-/* the theme toggle would be a no-op here; galleries are dark by design */
-body.gallery-dark .theme-toggle {
-    display: none;
 }
 
 body.wide main,
