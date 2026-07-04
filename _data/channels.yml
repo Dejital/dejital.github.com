@@ -1,0 +1,33 @@
+# Serge's favorite YouTube channels, grouped by topic. Rendered by channels.html.
+- label: AI &amp; agents
+  items:
+    - name: Geoffrey Huntley
+      url: https://www.youtube.com/@GeoffreyHuntley
+      note: Agentic coding — pushing coding agents to do real engineering.
+    - name: Unsupervised Learning
+      url: https://www.youtube.com/@unsupervised-learning
+      note: Agents, and the philosophy of where all this is heading.
+    - name: How I AI
+      url: https://www.youtube.com/@howiaipodcast
+      note: How people actually put AI to work, day to day.
+    - name: ArtemX
+      url: https://www.youtube.com/@ArtemXTech
+      note: Practical, hands-on AI tips.
+- label: Music
+  items:
+    - name: Joan Chamorro
+      url: https://www.youtube.com/@JoanChamorro
+      note: Jazz, and the young musicians he mentors.
+    - name: Emmet Cohen
+      url: https://www.youtube.com/@EmmetCohen
+      note: Jazz piano — the "Live from Emmet's Place" sessions.
+- label: Health &amp; longevity
+  items:
+    - name: Siim Land
+      url: https://www.youtube.com/@SiimLand
+      note: Health and longevity, grounded in the research.
+- label: Money
+  items:
+    - name: Financial Tortoise
+      url: https://www.youtube.com/@TaeKimFinancialTortoise
+      note: Calm, long-term personal finance and investing.
