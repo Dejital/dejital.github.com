@@ -1,0 +1,4 @@
+<font color="#FFFFFF" face="Verdana" size="2">
+                <a href="../index.shtml"><font color="#FFFFFF">Home</font></a><br>
+                <a href="../screenshots.shtml"><font color="#FFFFFF">Screenshots</font></a><br>
+                <a href="../characters.shtml"><font color="#FFFFFF">Characters</font></a></font>
