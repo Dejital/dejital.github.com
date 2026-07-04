@@ -1,0 +1,44 @@
+# DRAFT starter list — Serge: replace with your actual channels/blogs/podcasts.
+# Every entry below is a real, verifiable source; curate freely before pushing.
+
+youtube:
+  - name: Andrej Karpathy
+    url: https://www.youtube.com/@AndrejKarpathy
+    note: Zero-to-hero lectures that build GPT and a neural net from scratch.
+  - name: 3Blue1Brown
+    url: https://www.youtube.com/@3blue1brown
+    note: The visual neural-network and transformer series; best intuition-builder there is.
+  - name: Yannic Kilcher
+    url: https://www.youtube.com/@YannicKilcher
+    note: Paper walkthroughs that make new research legible.
+  - name: Two Minute Papers
+    url: https://www.youtube.com/@TwoMinutePapers
+    note: Fast, enthusiastic tours of fresh AI research.
+
+blogs:
+  - name: Simon Willison's Weblog
+    url: https://simonwillison.net/
+    note: Near-daily field notes on LLM tooling from someone actually shipping.
+  - name: Latent Space
+    url: https://www.latent.space/
+    note: swyx's newsletter on the emerging AI-engineer discipline.
+  - name: The Batch
+    url: https://www.deeplearning.ai/the-batch/
+    note: Andrew Ng's weekly read on what actually moved in AI.
+  - name: Lil'Log
+    url: https://lilianweng.github.io/
+    note: Deep, careful explainers on agents, prompting, and RL.
+
+podcasts:
+  - name: Latent Space
+    url: https://www.latent.space/podcast
+    note: Long-form interviews with the people building AI infra.
+  - name: Dwarkesh Podcast
+    url: https://www.dwarkesh.com/
+    note: Unusually deep interviews with researchers and thinkers.
+  - name: The Cognitive Revolution
+    url: https://www.cognitiverevolution.ai/
+    note: Nathan Labenz on applied AI, week over week.
+  - name: No Priors
+    url: https://www.nopriors.com/
+    note: Sarah Guo and Elad Gil on AI startups and research.
