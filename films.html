@@ -1,0 +1,126 @@
+---
+layout: default
+title: Films
+kicker: Every film I've seen since 2009
+permalink: /films/
+body_class: wide
+---
+<main>
+  <style>
+    /* Page-specific: the films table. Kept out of global screen.css.
+       All colors via --tokens so it reads on both light and dark themes. */
+    .films-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 0.6em 1em;
+      margin: 0.5em 0 1em;
+    }
+    .films-stat { color: var(--muted); font-family: var(--font-mono); font-size: 0.85rem; }
+    .films-filter {
+      flex: 1 1 12rem;
+      min-width: 10rem;
+      padding: 0.45em 0.7em;
+      font-family: var(--font-ui);
+      font-size: 0.95rem;
+      color: var(--text);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+    }
+    .films-filter:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+    .films-table-wrap { overflow-x: auto; }
+    table.films {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: var(--font-ui);
+      font-size: 0.92rem;
+    }
+    table.films th, table.films td {
+      padding: 0.45em 0.7em;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+    }
+    table.films td.f-title { white-space: normal; }
+    table.films thead th {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background: var(--surface);
+      color: var(--text);
+      cursor: pointer;
+      user-select: none;
+      font-weight: 600;
+      border-bottom: 2px solid var(--border);
+    }
+    table.films thead th:hover { color: var(--accent); }
+    table.films thead th .arrow { color: var(--muted); font-size: 0.75em; }
+
+    /* Rating color ramp, adapted from the old films.scss (pastel -> gold).
+       Fixed hues + dark text so it stays legible over both themes. */
+    td.score { text-align: center; font-weight: 600; color: #2a2d1a; }
+    td.score1 { background-color: #FFD5D8; }
+    td.score2 { background-color: #FFF6CD; }
+    td.score3 { background-color: #D9EACA; }
+    td.score4 { background-color: #BCDDA1; }
+    td.score5 { background-color: #FDC131; color: #480000; }
+
+    .films-pager {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1em;
+      margin: 1.2em 0 0.5em;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .films-pager button {
+      padding: 0.4em 0.9em;
+      font: inherit;
+      color: var(--text);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .films-pager button:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+    .films-pager button:disabled { opacity: 0.4; cursor: default; }
+  </style>
+
+  <p>The complete log, sortable and searchable. Ratings run 1&ndash;5, colored
+    worst to best. Data is a static snapshot (last updated May 2024).</p>
+
+  <div class="films-toolbar">
+    <input class="films-filter" id="films-filter" type="search"
+           placeholder="Filter by title or director&hellip;" aria-label="Filter films">
+    <span class="films-stat" id="films-stat"></span>
+  </div>
+
+  <div class="films-table-wrap">
+    <table class="films">
+      <thead>
+        <tr>
+          <th data-key="RATING" data-type="num">Rating <span class="arrow"></span></th>
+          <th data-key="TITLE" data-type="str">Title <span class="arrow"></span></th>
+          <th data-key="YEAR" data-type="num">Year <span class="arrow"></span></th>
+          <th data-key="DIRECTOR" data-type="str">Director <span class="arrow"></span></th>
+          <th data-key="DATE SEEN" data-type="date">Date seen <span class="arrow"></span></th>
+          <th data-key="REPEAT" data-type="str">Repeat <span class="arrow"></span></th>
+        </tr>
+      </thead>
+      <tbody id="films-body"></tbody>
+    </table>
+  </div>
+
+  <div class="films-pager">
+    <button id="films-prev" type="button">&larr; Prev</button>
+    <span id="films-page"></span>
+    <button id="films-next" type="button">Next &rarr;</button>
+  </div>
+
+  <script>const FILMS = {{ site.data.films | jsonify }};</script>
+  <script src="/assets/js/films.js" defer></script>
+</main>
