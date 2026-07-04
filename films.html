@@ -121,6 +121,6 @@ body_class: wide
     <button id="films-next" type="button">Next &rarr;</button>
   </div>
 
-  <script>const FILMS = {{ site.data.films | jsonify }};</script>
+  <script>window.FILMS = {{ site.data.films | jsonify }};</script>
   <script src="/assets/js/films.js" defer></script>
 </main>
