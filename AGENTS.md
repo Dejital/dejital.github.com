@@ -5,6 +5,11 @@ https://snevsky.com a couple of minutes later. No build step to run locally
 beyond `./serve.sh` for preview. Excluded from the built site via
 `_config.yml` `exclude` (this file is repo docs, not content).
 
+Serving for preview: Serge always views from a different machine than the
+host, so bind to the network (`--host 0.0.0.0`), never localhost-only, and
+give him the `http://<LAN-IP>:<port>/` URL. `./serve.sh` binds 127.0.0.1 by
+default: run `bundle exec jekyll serve --host 0.0.0.0` instead.
+
 Voice rule for anything published here: no em-dashes (AI tell) — use
 comma/colon/parens. Full brand rules live in
 `~/life/wealth/brand/CONTENT.md`.

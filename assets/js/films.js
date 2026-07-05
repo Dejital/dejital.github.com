@@ -97,7 +97,8 @@
     th.addEventListener('click', function () {
       var key = th.getAttribute('data-key');
       if (key === sortKey) { sortDir = -sortDir; }
-      else { sortKey = key; sortType = th.getAttribute('data-type') || 'str'; sortDir = 1; }
+      // Rating sorts best-first on the first click; others ascending-first.
+      else { sortKey = key; sortType = th.getAttribute('data-type') || 'str'; sortDir = key === 'RATING' ? -1 : 1; }
       page = 0;
       render();
     });
@@ -108,4 +109,30 @@
   nextBtn.addEventListener('click', function () { page++; render(); });
 
   render();
+})();
+
+// All-Time Favorites carousel: close (persisted) + arrow scrolling.
+(function () {
+  var favs = document.getElementById('favs');
+  if (!favs) return;
+  var track = document.getElementById('favs-track');
+  var prev = document.getElementById('favs-prev');
+  var next = document.getElementById('favs-next');
+  var closeBtn = document.getElementById('favs-close');
+
+  // Dismiss for this view only; a refresh brings it back (no persistence).
+  closeBtn.addEventListener('click', function () { favs.hidden = true; });
+
+  function step() { return Math.round(track.clientWidth * 0.8); }
+  prev.addEventListener('click', function () { track.scrollBy({ left: -step(), behavior: 'smooth' }); });
+  next.addEventListener('click', function () { track.scrollBy({ left: step(), behavior: 'smooth' }); });
+
+  function updateArrows() {
+    var max = track.scrollWidth - track.clientWidth - 1;
+    prev.disabled = track.scrollLeft <= 0;
+    next.disabled = track.scrollLeft >= max;
+  }
+  track.addEventListener('scroll', updateArrows);
+  window.addEventListener('resize', updateArrows);
+  updateArrows();
 })();
