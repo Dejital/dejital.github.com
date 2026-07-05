@@ -144,6 +144,11 @@ body_class: wide
       white-space: nowrap;
     }
     table.films td.f-title { white-space: normal; }
+    table.films th.f-imdb, table.films td.f-imdb { text-align: center; cursor: default; }
+    table.films th.f-imdb:hover { color: inherit; }
+    .imdb-link { display: inline-block; vertical-align: middle; }
+    .imdb-link img { display: block; height: 15px; width: auto; border-radius: 3px; opacity: 0.75; }
+    .imdb-link:hover img { opacity: 1; }
     table.films thead th {
       position: sticky;
       top: 0;
@@ -235,7 +240,7 @@ body_class: wide
           <th data-key="YEAR" data-type="num">Year <span class="arrow"></span></th>
           <th data-key="DIRECTOR" data-type="str">Director <span class="arrow"></span></th>
           <th data-key="DATE SEEN" data-type="date">Date seen <span class="arrow"></span></th>
-          <th data-key="REPEAT" data-type="str">Repeat <span class="arrow"></span></th>
+          <th class="f-imdb" aria-label="IMDb link"></th>
         </tr>
       </thead>
       <tbody id="films-body"></tbody>

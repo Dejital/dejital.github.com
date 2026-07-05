@@ -62,14 +62,17 @@
       var r = slice[i];
       var score = parseInt(r.RATING, 10);
       var cls = (score >= 1 && score <= 5) ? 'score score' + score : 'score';
-      var repeat = r.REPEAT === 'TRUE' ? '&#8635;' : '';
+      var imdbQ = encodeURIComponent(((r.TITLE || '') + ' ' + (r.YEAR || '')).trim());
+      var imdb = '<a class="imdb-link" href="https://www.imdb.com/find/?q=' + imdbQ +
+        '&amp;s=tt&amp;exact=true&amp;ref_=fn_ttl_ex" target="_blank" rel="noopener noreferrer" ' +
+        'title="Find on IMDb" aria-label="Find on IMDb"><img src="/assets/img/imdb.png" alt="IMDb"></a>';
       html += '<tr>' +
         '<td class="' + cls + '">' + esc(r.RATING) + '</td>' +
         '<td class="f-title">' + esc(r.TITLE) + '</td>' +
         '<td>' + esc(r.YEAR) + '</td>' +
         '<td>' + esc(r.DIRECTOR) + '</td>' +
         '<td>' + esc(r['DATE SEEN']) + '</td>' +
-        '<td>' + repeat + '</td>' +
+        '<td class="f-imdb">' + imdb + '</td>' +
       '</tr>';
     }
     body.innerHTML = html;
@@ -96,6 +99,7 @@
   heads.forEach(function (th) {
     th.addEventListener('click', function () {
       var key = th.getAttribute('data-key');
+      if (!key) return; // blank IMDb column: not sortable
       if (key === sortKey) { sortDir = -sortDir; }
       // Rating sorts best-first on the first click; others ascending-first.
       else { sortKey = key; sortType = th.getAttribute('data-type') || 'str'; sortDir = key === 'RATING' ? -1 : 1; }
